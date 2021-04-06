@@ -1,0 +1,530 @@
+\documentclass[a4paper,10pt,twoside,twocolumn]{dndbook} %a4, 10pt, book (idk why i did that...), 2 cols, dnd-themed
+\usepackage[english]{babel} %language
+\usepackage[utf8]{inputenc} %lovely utf-8
+\usepackage{graphicx} %images
+\usepackage{wrapfig} %images
+\usepackage{array} %allways use this shit, idk why
+\usepackage{tikz} %draw stuff
+\usepackage{ifthen} %draw stuff
+\usetikzlibrary{shapes,calc,fadings} %draw stuff
+\usepackage{xspace} %usefull idk, allways import this stuff
+\usepackage{dirtytalk} %\say because fuck it
+\usepackage{setspace} %don't ask, kind of like it...
+\usepackage{pgfplots}
+
+\usepackage[singlelinecheck=false]{caption} %idk dndbook...
+\usepackage{listings} %idk dndbook...
+\usepackage{shortvrb} %not used yet...
+\usepackage{stfloats} %idk dndbook
+
+\singlespacing
+\makeatletter %because of titlepage and \HUGE
+
+\@openrightfalse %no empty pages
+
+\graphicspath{ {./images/} }
+
+\def \license {GNU Free Documentation License}
+\def \licensetext {Please consider and respect the copyleft of this license. The content of this document should be accessible to everyone. Everyone has the right to use the content of this document as he/she wishes, to modify it, to publish it modified (taking into account the copyleft) and to republish it without any changes (taking into account the copyleft).}
+\def \author {Sven Hugi}%if you edit this document, add your name... <3
+\def \illustrators {} %add name
+\def \othercontrib {} %add name
+
+%highlighting with some random effect -> looks handmade and i love it...
+\newcommand\hl[2][yellow]{
+	\begin{tikzpicture}[
+	baseline,
+	decoration={random steps,amplitude=1pt,segment length=15pt},
+	outer sep=-15pt, inner sep = 0pt
+	]
+	\node[decorate,rectangle,fill=#1,anchor=text]{#2\xspace};
+	\end{tikzpicture}
+}
+%2 column layout hack...
+\newcommand{\nextPage}{
+	\newpage
+	\hbox{}
+	\newpage
+}
+%make bad things look ok...
+\newcommand{\doublelinebreak}{
+	\linebreak\linebreak
+}
+%the old HUGE fontsize
+\newcommand\HUGE{\@setfontsize\Huge{60}{80}} 
+
+\renewcommand{\maketitle}{
+	\thispagestyle{empty}
+	\onecolumn %fuck it
+	\vspace*{5cm}
+	\begin{center}
+		$\vspace*{2cm}$
+			{\HUGE\DndFontDropCap{MESSENGER}}\\	
+	\end{center}
+	\twocolumn %reset shit
+}\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%											Begin with the fucking document														%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\maketitle
+	\section*{Credits}
+	\vspace{.25cm}
+	\textbf{Authors:} \author\linebreak
+	\textbf{Illustrators:} \illustrators\linebreak
+	\textbf{Additional Contributors:} \othercontrib\linebreak
+	\textbf{License:} \license\doublelinebreak
+	\licensetext\doublelinebreak
+	
+	\vfill\pagebreak\hbox{}\vfill\hfill{\tiny This Document was written in \LaTeX.}
+	\tableofcontents
+	\section{Introduction}
+	The Messenger class is a homebrew D\&D class, which is great for oneshots. The focus is on roleplay and variety. The class is designed in such a way that all specialties are covered by the subclass. The main class does not say anything about a character. No guarantee that this class will not result in potentially unbalanced creations when multiclassing or using certain races.\doublelinebreak
+	\chapter{Messenger}
+	\DndDropCapLine{A} messenger is a representative who works for a higher creature or region. His job is to communicate and negotiate with other higher creatures and regions. How a messenger gets his job can be different. Maybe he applied for a job in a monastery, maybe he is religious and a god has spoken to him. But maybe a god saved his life and now he is in his debt. The messenger is usually the mysterious person in the party. He is the one who does the talking during conversations and gets other people to do what brings benefits to him. Why he helps someone is not always obvious, but he seems to be serious about what he does.
+	
+	\begin{DndTable}[header=The Messenger]{cccX}
+		\textbf{Level}	&\textbf{SCAN}	&\textbf{Proficiency Bonus}	&\textbf{Features}\\
+		$1st$			&$13$			&+$2$			&Spellcasting, origin, first spell\\
+		$2nd$			&$14$			&+$2$			&Attackstyle\\
+		$3th$			&$15$			&+$2$			&second spell\\
+		$4th$			&$16$			&+$2$			&Ability Score Improvement\\
+		$5th$			&$17$			&+$3$			&third spell\\
+		$6th$			&$18$			&+$3$			&Attackstyle Improvement\\
+		$7th$			&$19$			&+$3$			&\\
+		$8th$			&$20$			&+$3$			&Ability Score Improvement\\
+		$9th$			&$21$			&+$4$			&\\
+		$10th$			&$22$			&+$4$			&Attackstyle Improvement\\
+		$11th$			&$23$			&+$4$			&\\
+		$12th$			&$24$			&+$4$			&Ability Score Improvement\\
+		$13th$			&$25$			&+$5$			&\\
+		$14th$			&$26$			&+$5$			&Attackstyle Improvement\\
+		$15th$			&$27$			&+$5$			&\\
+		$16th$			&$28$			&+$5$			&Ability Score Improvement\\
+		$17th$			&$29$			&+$6$			&\\
+		$18th$			&$30$			&+$6$			&Attackstyle Improvement\\
+		$19th$			&$31$			&+$6$			&\\
+		$20th$			&$32$			&+$6$			&Ability Score Improvement\\
+		
+	\end{DndTable}
+	\vfill
+	\hbox{}
+	\pagebreak
+	\section{Class Features}
+	As a Messenger you gain the following class features.
+	\subsubsection{Hit Points}
+	\textbf{Hit Dice:} 1d8 per messenger level\linebreak
+	\textbf{Hit Points at 1st Level:} 8 + your Constitution modifier.\linebreak
+	\textbf{Hit Points at Higher Levels:} 1d8 (or 5) + your Constitution modifier per messenger level after 1st.
+	\subsubsection{Proficiencies}
+	\textbf{Armor:} None (a messenger will never wear armor)\linebreak
+	\textbf{Weapons:} Simple weapons, shortbow, sickles, daggers\linebreak
+	\textbf{Tools:} None\linebreak
+	\textbf{Saving Throws:} Charisma, Intelligence\linebreak
+	\textbf{Skills:} Chosse two from Acrobatics, Arcana, Desception, Persuasion, Religion
+	\subsubsection{Equipment}
+	You start with the following equipment, in addition to the equipment granted by your background\linebreak
+	\begin{itemize}
+		\item $\textbf{(a)}$ two daggers or $\textbf{(b)}$ a shortsword or $\textbf{(c)}$ a shortbow with 20 bolts
+		\item $\textbf{(a)}$ a silk tunic or $\textbf{(b)}$ simple good looking clothes
+		\item a Diplomat's Pack
+		\item a Bottle of wine
+	\end{itemize}
+	\subsection{Attackstyle}
+	You can choose between two different battle types
+	\subsubsection{Sneaky}
+	If you are unnoticed during an attack you can add a bonus to your damage
+	\begin{DndTable}[header=Damage per Level]{cX}
+		\textbf{Level}	&\textbf{Damage}\\
+		$1$				&(half your level in this class) d4 (min 1d4)\\
+		$6$				&(half your level in this class + 1) d4\\
+		$10$			&(half your level in this class) d4 + 1d6\\
+		$14$			&(half your level in this class) d4 + 1d8\\
+		$18$			&(half your level in this class) d4 + 1d12\\
+	\end{DndTable}
+	\subsubsection{Brutal}
+	On an attack (whole action) you add aditional damage
+		\begin{DndTable}[header=Damage per Level]{cX}
+		\textbf{Level}	&\textbf{Damage}\\
+		$1$				&\DndDice{1d4}\\
+		$6$				&\DndDice{2d4}\\
+		$10$			&\DndDice{2d6}\\
+		$14$			&\DndDice{2d8}\\
+		$18$			&\DndDice{3d8}\\
+	\end{DndTable}
+	\subsection{Origin}
+	Starting at Class Level 1 you choose the region you represent.
+	\begin{DndTable}[header=Origins]{llX}
+		\textbf{Origin}	&\textbf{Focus}		&\textbf{Mainfeature}\\
+		Arvandor		&Support			&Holy-Healing\\
+		Cania			&Tank				&Ice-Shield\\
+		Feywild			&Ranged Attacks		&Proficencies\\
+		Lunia			&Support / Fight	&Fight-Inspiration\\
+		Mechanus		&Spellcasting		&Cantrips and multiple Spell Lists\\
+		Phlegethos		&Do damage			&Fireattack\\
+	\end{DndTable}
+	\subsection{Spellcasting}
+	\textbf{Spell Cast Die:} d12\linebreak
+	\textbf{Spell save DC:} 8 + your proficiency bonus + your Charisma modifier\linebreak
+	\textbf{Spell Attack Modifier:} your proficiency bonus + your Charisma modifier\doublelinebreak
+	Starting at Level 1, you are able to cast Spells. Your Origin decides which Spells you can cast. Your spelllist contains 3 spells. The first spell gets your lowes spell slot, your second spell the middle one and your third spell the highest. If you want to cast a spell, you roll your Spell Cast Die and reduce your Spell Cast Ability Number (SCAN) by the rolled result. If the Spell Cast Ability Number is now equal or higher than 0 you can cast, if your Spell Cast Ability Number (SCAN) gets below 0 you can not cast (you can make a charismasavingthrow (dc 15) to redo the last roll, this will end your turn but you can eventually cast in the next round). Your Spell Cast Ability Number (SCAN) recovers after a longrest.
+	\begin{DndTable}[header=Spell Slots]{cccccccc}
+		\textbf{Level}	&$\textbf{1}$	&$\textbf{2}$	&$\textbf{3}$	&$\textbf{4}$	&$\textbf{5}$	&$\textbf{6}$	&$\textbf{7}$\\
+		$1$				&$1$			&-				&-				&-				&-				&-				&-\\
+		$2$				&$1$			&-				&-				&-				&-				&-				&-\\
+		$3$				&$1$			&$1$			&-				&-				&-				&-				&-\\
+		$4$				&$1$			&$1$			&-				&-				&-				&-				&-\\
+		$5$				&$1$			&$1$			&$1$			&-				&-				&-				&-\\
+		$6$				&$1$			&$1$			&$1$			&-				&-				&-				&-\\
+		$7$				&-				&$2$			&$1$			&-				&-				&-				&-\\
+		$8$				&-				&$1$			&$2$			&-				&-				&-				&-\\
+		$9$				&-				&$1$			&$1$			&$1$			&-				&-				&-\\
+		$10$			&-				&-				&$2$			&$1$			&-				&-				&-\\
+		$11$			&-				&-				&$1$			&$2$			&-				&-				&-\\
+		$12$			&-				&-				&$1$			&$1$			&$1$			&-				&-\\
+		$13$			&-				&-				&-				&$2$			&$1$			&-				&-\\
+		$14$			&-				&				&-				&$1$			&$2$			&-				&-\\
+		$15$			&-				&-				&-				&$1$			&$1$			&$1$			&-\\
+		$16$			&-				&-				&-				&-				&$2$			&$1$			&-\\
+		$17$			&-				&-				&-				&-				&$1$			&$2$			&-\\
+		$18$			&-				&-				&-				&-				&$1$			&$1$			&$1$\\
+		$19$			&-				&-				&-				&-				&-				&$2$			&$1$\\
+		$20$			&-				&-				&-				&-				&-				&$1$			&$2$\\
+	\end{DndTable}
+	\includegraphics[height=267mm]{placeholder}
+	\chapter{Arvandor}
+	\DndDropCapLine{A}s a messenger from Arvandor you don't care about the law as long as you do good things and do not harm others. It is a good idea to play this subclass as an elven creature. Your alignment will most likely be chaotic good or chaotic neutral.
+	\section{Features of origin}
+	\begin{DndTable}[header=Arvandor Features]{lX}
+		\textbf{Level}	&\textbf{Features}\\
+		$1$				&Holy-Healing\\
+		$2$				&\\
+		$3$				&Religious Wisdom\\
+		$4$				&\\
+		$5$				&Save of the gods\\
+		$6$				&\\
+		$7$				&Wisdom of Nature\\
+		$8$				&\\
+		$9$				&Save of the Gods 2\\
+		$10$			&\\
+		$11$			&Ability Score Improvement, Lifesaver\\
+		$12$			&\\
+		$13$			&Holy Healing Improvement\\
+		$14$			&\\
+		$15$			&Ability Score Improvement\\
+		$16$			&\\
+		$17$			&Holy Healing Improvement\\
+		$18$			&\\
+		$19$			&More life energy\\
+		$20$			&Troll the death\\
+	\end{DndTable}
+	\subsection{Holy Healing}
+	Starting at level 1 you can proficiency bonus times per long rest as bonus action heal a creature for 1d6 hp.\linebreak
+	If you reach Level 13 in this class, you can heal for 2d8 hp and\linebreak
+	on Level 17 for 2d10.
+	\subsection{religious wisdom}
+	Since you have studied religions intensively, you gain a plus 2 bonus on Religion checks and have advantage on them.
+	\subsection{Save of the gods}
+	If your hit points drops below $\frac{1}{3}$ of your total hit points you gain advantage on attacks.
+	\subsection{Wisdom of Nature}
+	Since you have a good feeling for nature, you gain a plus 2 bonus on Nature checks and have advantage on them.
+	\subsection{Save of the Gods 2}
+	If your hit points drops below $\frac{1}{3}$ of your total hit points and your rolled damage is less than $\frac{1}{2}$ of the max possible damage with your weapon, you can reroll the damage if you wish.
+	\subsection{Ability Score Improvement}
+	On level 11 and 15 you gain 1 point in Intelligence and Wisdom.
+	\subsection{Livesaver}
+	You have advantage on Medicine checks to save a creature from dying.
+	\subsection{more life energy}
+	You gain 20 more Hit Points.
+	\subsection{Troll the death}
+	You are able to reroll a death save once per long rest.
+	\begin{DndTable}[header=Spells]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Cure Wounds or Healing Word\\
+		$2$						&Aid or Praier of Healing\\
+		$3$						&Daylight or Remove Curse\\
+	\end{DndTable}
+	\hspace*{2cm}\includegraphics[height=160mm]{placeholder}
+	\chapter{Cania}
+	\DndDropCapLine{A}s a messenger from Cania you are familiar with the harsh temperatures of this ice-hell. You basically follow the laws, even if they are not those of the current region. You can be very unpredictable at times. Your alignment is mainly evil, but can also be different.
+	\section{Features of origin}
+		\begin{DndTable}[header=Cania Features]{lX}
+		\textbf{Level}	&\textbf{Features}\\
+		$1$				&Ice-Shield, Wild Magic, Messenger of the Cold, Fighters Life, Ice Skin\\
+		$2$				&\\
+		$3$				&Ice Skin\\
+		$4$				&\\
+		$5$				&Ice-Shield Improvement\\
+		$6$				&\\
+		$7$				&Ice Skin\\
+		$8$				&\\
+		$9$				&Ice-Shield Improvement\\
+		$10$			&\\
+		$11$			&Ice Skin\\
+		$12$			&\\
+		$13$			&Ice-Shield Improvement\\
+		$14$			&\\
+		$15$			&Ice Skin\\
+		$16$			&\\
+		$17$			&Ice-Shield Improvement\\
+		$18$			&\\
+		$19$			&Strong Ice Skin\\
+		$20$			&Ice-Shield Improvement, Messenger of the Ice\\
+	\end{DndTable}
+	\subsection{Ice-Shield}
+	Starting at level 1 if you are attacked, you are able to pull as a reaction an ice shield from the ground, which can have a size of max 10 ft x 10ft x 1ft. It can be casted (prof bonus) times per long rest. An opponent must destroy the ice shield or go around it. (resistance against ice dmg, vulnerablility against fire dmg). The shield has 15 hitpoints and a AC of 13, which increases with certain levels in this class.\linebreak
+	On level 5 there is 23 hitpoints,\linebreak
+	on level 9 it is 31 hitpoints,\linebreak
+	on level 13 it is 39 hitpoints,\linebreak
+	on level 17 it is 45 hitpoints and\linebreak
+	on level 20 it is 60 hitpoints.\linebreak
+	If the damage delt to the shield exceeds the hitpoints of the shield, the shield absorbs the damage and gets destroyed.
+	\vfill
+	\pagebreak
+	\subsection{Wild Magic}
+	Because you come from a plane of the nine hells, your magic is very unstable. You have a 20\% change that your magic goes wild. If your magic goes wild, you will instead cast something that is written on your wild magic sheet. Put your wild magic sheet together with your DM or at least let him look over it.
+	\subsection{Messenger of the Cold}
+	Since you represent a very cold place, you have a resistance against cold temperature and ice.
+	\subsection{Fighters Life}
+	You are proficient wiht martial weapons.
+	\subsection{Ice Skin}
+	Because of the cold temperature you are faced with, your skin is getting stronger and stronger. You gain a plus 1 bonus to your Armor Class.
+	\subsection{Strong Ice Skin}
+	Because of the cold temperature you are faced with, your skin has turned into ice. You gain a plus 2 bonus to your Armor Class.
+	\subsection{Messenger of the Ice}
+	You gain a immunity against cold temperature.
+	\begin{DndTable}[header=Spells]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Ice Knife\\
+		$2$						&Misty Step\\
+		$3$						&Wind Wall\\
+	\end{DndTable}
+	\chapter{Feywild}
+	\DndDropCapLine{A}s a messenger from Feywild you are trained to sneak around, survive in the nature and useing the bow.
+		\section{Features of origin}
+	\begin{DndTable}[header=Feywild Features]{lX}
+		\textbf{Level}	&\textbf{Features}\\
+		$1$				&Fey Weapontraining\\
+		$2$				&\\
+		$3$				&Sneaking in the Woods\\
+		$4$				&\\
+		$5$				&Darkvision, Runner of the Woods\\
+		$6$				&\\
+		$7$				&Survivor of the Woods\\
+		$8$				&\\
+		$9$				&The Wise Wanderer, Wisdom of the Sharpshoter\\
+		$10$			&\\
+		$11$			&Naturalist, Druidcraft\\
+		$12$			&\\
+		$13$			&Friend of the Animals\\
+		$14$			&\\
+		$15$			&Sneaking in the Woods\\
+		$16$			&\\
+		$17$			&Ability Score Improvement, Camouflaged\\
+		$18$			&\\
+		$19$			&Sneaking in the Woods\\
+		$20$			&Helping Hand\\
+	\end{DndTable}
+	\subsection{Fey Weapontraining}
+	You are proficient wiht ranged weapons.
+	\subsection{Sneaking in the Woods}
+	On level 3 you gain a plus 2 bonus on Stealth checks and you are proficient in it. On level 15 and 19 you gain a additional plus 2 bonus on Stealth checks.
+	\subsection{Darkvision}
+	You gain Darkvision up to 60ft.
+	\subsection{Runner of the Woods}
+	Your speed is not reduced by plants and terrain.
+	\subsection{Survivor of the Woods}
+	You gain a plus 2 bonus on Survival checks and you are proficient in it.
+	\subsection{The Wise Wanderer}
+	You gain proficency on wisdom savingthrows.
+	\subsection{Wisdom of the Sharpshoter}
+	You can add your Wisdom modifier to your attack bonus if you make a attack with a ranged weapon.
+	\subsection{Naturalist}
+	You gain a plus 2 bonus on Nature checks and you are proficient in it.
+	\subsection{Druidcraft}
+	You gain the cantrip Druidcraft.
+	\subsection{Friend of the Animals}
+	You gain a plus 2 bonus on Animal Handling checks and you are proficient in it.
+	\subsection{Ability Score Improvement}
+	On Level 17 you can increase your Wisdom Score by 2.
+	\subsection{Camouflaged}
+	If you are in a forest you can add twice your proficiency bonus to your stealth checks.
+	\subsection{Helping Hand}
+	You can once per day summon a Pixie (1d4-1 (min 1) hp) which is controlled by you. You cannot have more than one Pixie at the time. You can only summon another one after the last one has died. She recovers all hp during a long or shortrest.
+	\begin{DndTable}[header=Spells]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Speak with Animals\\
+		$2$						&Misty Step\\
+		$3$						&Major Image or Tidal Wave\\
+	\end{DndTable}
+	\chapter{Lunia}
+	\DndDropCapLine{A}s a messenger of Lunia you are familiar with the night. You are a mysterious character who doesn't sleep and prefers to travel at night, but you are still a very nice and fair person.
+			\section{Features of origin}
+	\begin{DndTable}[header=Lunia Features]{lX}
+		\textbf{Level}	&\textbf{Features}\\
+		$1$				&Fighting Inspiration\\
+		$2$				&\\
+		$3$				&Untouchable\\
+		$4$				&\\
+		$5$				&Fighting Inspiration Improvement\\
+		$6$				&\\
+		$7$				&Counter Attack\\
+		$8$				&\\
+		$9$				&Night Life\\
+		$10$			&\\
+		$11$			&Fighting Inspiration Improvement\\
+		$12$			&\\
+		$13$			&Fighting Inspiration Improvement\\
+		$14$			&\\
+		$15$			&Fast Hide, Night Runner\\
+		$16$			&\\
+		$17$			&Fighting Inspiration Improvement\\
+		$18$			&\\
+		$19$			&Sleepless\\
+		$20$			&Endless Walk, Fighting Inspiration Improvement\\
+	\end{DndTable}
+	\subsection{Fighting Inspiration}
+	If you hit on an attack, any friendly creature in a 5 foot radius can add a d4 to their damage on the next attack or to the next abilty check.\linebreak
+	On classlevel 5 it becomes 10 feet,\linebreak
+	on classlevel 13 15 feet and on classlevel 20 it reaches 30 feet.\linebreak
+	The dice gets also increased with increasing classlevel.\linebreak
+	On classlevel 11 it is a d6 and\linebreak
+	on classlevel 17 a d8.
+	\subsection{Untouchable}
+	Your Armor Class is 10 pluss the double of your Dexterity modifier.
+	\subsection{Counter Attack}
+	If a melee attack on you does not hit, you can make as a reaction a counter attack.
+	\subsection{Night Life}
+	Your vision is not affected by darkness and you gain a plus 4 bonus on ability checks at night.
+	\vfill
+	\pagebreak
+	\subsection{Fast Hide}
+	You are able to hide without losing any speed.
+	\subsection{Night Runner}
+	Your walking, flying and swimming speed is doubled during the night
+	\subsection{Sleepless}
+	You don't need sleep anymore. Four hour of a night without extensive activity counts for you as long rest
+	\subsection{Endless Walk}
+	You can't suffer form exhaustion because of traveling.
+	\begin{DndTable}[header=Spells]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Healing Word\\
+		$2$						&Lesser Restoration\\
+		$3$						&Fast Friends\\
+	\end{DndTable}
+	\hspace*{2cm}\includegraphics[height=140mm]{placeholder}
+	\chapter{Mechanus}
+		\DndDropCapLine{A}s a messenger of Mechanus you are trained in magic and can cast more spells than other messengers. 
+	\section{Features of origin}
+	\begin{DndTable}[header=Mechanus Features]{lX}
+		\textbf{Level}	&\textbf{Features}\\
+		$1$				&Massive Spellcasting, Cantrips\\
+		$2$				&\\
+		$3$				&\\
+		$4$				&\\
+		$5$				&\\
+		$6$				&\\
+		$7$				&\\
+		$8$				&\\
+		$9$				&Second Spelllist\\
+		$10$			&\\
+		$11$			&\\
+		$12$			&\\
+		$13$			&Thrid Spelllist\\
+		$14$			&\\
+		$15$			&\\
+		$16$			&\\
+		$17$			&Fourth Spelllist\\
+		$18$			&\\
+		$19$			&\\
+		$20$			&Cantrips\\
+	\end{DndTable}
+	\subsection{Massive Spellcasting}
+	Your spell cast die is a d8 instead of an d12.
+	\subsection{Cantrips}
+	At Class Level 1 you got two cantrips from Fire Bolt, Mage Hand, Light, Mending, Chill Touch, Control Flames, Guidance
+	At Level 20 you got another cantrip, chose form Frostbite, Sword Burst, Booming Blade and Acid Splash.
+	\subsection{Multiple Spelllists}
+	Starting at level 9 you can create another spelllist. On each longrest you decide which one you will use until the next longrest. You can change the list on a shortrest, but until the next longrest your spell cast dice will increase by 1d4. You also can create a spelllist on Level 13 and 17.
+	
+	\begin{DndTable}[header=First Spelllist]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Bane, Detect Evil and Good, Cure Wounds or Healing Word\\
+		$2$						&Misty Step, Darkvision, Aid, Magic Weapon or Alter Self\\
+		$3$						&Fireball, Fly, Remove Curse, Lightning Arrow or Mass Healing Word\\
+	\end{DndTable}
+	\begin{DndTable}[header=Second Spelllist]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Mysty Step, Aid, Invisibility, Heat Metal, Darkness, Healing Word or Bane\\
+		$2$						&Blink, Fly, Remove Curse, Daylight or Prayer of Healing\\
+		$3$						&Confusion, Stoneskin, Phantasmal Killer, Mass Healing Word or Lightning Arrow\\
+	\end{DndTable}
+	\begin{DndTable}[header=Third Spelllist]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Fly, Daylight, Mysty Step, Invisibility or Healing Word\\
+		$2$						&Confusion, Elemental Bane, Fire Shield, Locate Creature or Stoneskin\\
+		$3$						&Dream, Mass Cure Wounds, Scrying or Polymorph\\
+	\end{DndTable}
+	\begin{DndTable}[header=Fourth Spelllist]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Scrying Daylight, Mysty Step, Invisibility or Healing Word\\
+		$2$						&Elemental Bane, Fire Shield, Phantasmal Killer or Fireball\\
+		$3$						&Find Path, Investiture of Ice, Investiture of Stone, Investiture of Wind or Greater Restoration\\
+	\end{DndTable}
+	
+	\chapter{Phlegethos}
+	\DndDropCapLine{A}s an messager of Phlegethos you are trained to fight with swords. You can deal massive damage to the enemy. And you may like fire…
+	\section{Features of origin}
+	\begin{DndTable}[header=Phlegethos Features]{lX}
+		\textbf{Level}	&\textbf{Features}\\
+		$1$				&Fireattack, Fireresistance, Phlegethos Weapontraining, Wild Magic\\
+		$2$				&\\
+		$3$				&Iron Body\\
+		$4$				&\\
+		$5$				&Force of the Fir, Fireattack Improvement\\
+		$6$				&\\
+		$7$				&Iron Skin\\
+		$8$				&\\
+		$9$				&Fireattack Improvement\\
+		$10$			&\\
+		$11$			&Iron Body Improvement\\
+		$12$			&\\
+		$13$			&Fireattack Improvement\\
+		$14$			&\\
+		$15$			&Iron Skin Improvement\\
+		$16$			&\\
+		$17$			&Fireattack Improvement\\
+		$18$			&\\
+		$19$			&Iron Skin Improvement\\
+		$20$			&Fireattack Improvement\\
+	\end{DndTable}
+	\subsection{Fireattack}
+	You can (Proficency Bonus) times per long rest add 2d4 fire damage to your attack
+	This becomes more with increasing classlevel,\linebreak
+	for level 5 it is 2d6,\linebreak
+	for level 9 it is 2d8,\linebreak
+	for level 13 3d8,\linebreak
+	for level 17 3d12 and\linebreak
+	for level 20 5d12.
+	\subsection{Fireresistance}
+	Since you represent a very hot place, you have a resistance to fire and high temperatures.
+	\subsection{Phlegethos Weapontraining}
+	You gain proficency with martial weapons
+	\subsection{Iron Body}
+	You can increase your strength and constitution score by 1, your strength and constitution cap gets allso increased to 22.\linebreak
+	On level 11 you can increase your strength and constitution score by 1 more.
+	\subsection{Force of the Fire}
+	You gain a plus 2 bonus on your attackbonus.
+	\subsection{Iron Skin}
+	Your skin is getting stronger and stronger. You gain a plus 1 bonus to your Armor Class.
+	\subsection{Wild Magic}
+	Because you come from a plane of the nine hells, your magic is very unstable. You have a 20\% change that your magic goes wild. If your magic goes wild, you will instead cast something that is written on your wild magic sheet. Put your wild magic sheet together with your DM or at least let him look over it.
+	
+	\begin{DndTable}[header=Spells]{lX}
+		\textbf{Spell Number}	&\textbf{Spell}\\
+		$1$						&Healing Word\\
+		$2$						&Mysty Step\\
+		$3$						&Fireball\\
+	\end{DndTable}
+	\vspace{2cm}\\\hspace*{2cm}\includegraphics[height=140mm]{placeholder}
+\end{document}

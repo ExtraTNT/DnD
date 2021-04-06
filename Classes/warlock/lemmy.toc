@@ -1,0 +1,15 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {section}{Extended Spell List}{4}% 
+\contentsline {section}{Level 1}{4}% 
+\contentsline {subsection}{Don't ask for Help}{4}% 
+\contentsline {subsection}{Rock 'n Roll}{4}% 
+\contentsline {subsection}{Song of Rest}{4}% 
+\contentsline {section}{Level 6}{4}% 
+\contentsline {subsection}{I don't do regrets}{4}% 
+\contentsline {subsection}{Lemmy, I need a Beer}{4}% 
+\contentsline {section}{Level 10}{4}% 
+\contentsline {subsection}{educated}{4}% 
+\contentsline {section}{level 14}{4}% 
+\contentsline {subsection}{Let's Fight}{4}% 
+\contentsfinish 
