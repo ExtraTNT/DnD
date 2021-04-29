@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  25 APR 2021 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  29 APR 2021 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**sdms.tex
-(./sdms.tex
+**01.tex
+(./01.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/home/hugisv/texmf/tex/latex/dnd/dndbook.cls
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -24,12 +24,6 @@ Package dnd Info: Unknown option "a4paper" passed to book class.
 
 
 Package dnd Info: Unknown option "10pt" passed to book class.
-
-
-Package dnd Info: Unknown option "twoside" passed to book class.
-
-
-Package dnd Info: Unknown option "twocolumn" passed to book class.
 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -619,11 +613,6 @@ Package: multitoc 1999/06/08 v2.01 MultiToc Package (MS)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count293
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-141.
-
 \mult@box=\box73
 \multicol@leftmargin=\dimen265
 \c@unbalance=\count294
@@ -690,7 +679,8 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box117
 \colbreak@box=\box118
 \mc@col@check@num=\count302
-) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
 (/home/hugisv/texmf/tex/latex/dnd/lib/compat.sty)
@@ -1225,28 +1215,47 @@ ings
 \@dblbotnum=\count352
 \c@dblbotnumber=\count353
 )
+(/usr/share/texlive/texmf-dist/tex/latex/yfonts/yfonts.sty
+Package: yfonts 2019/04/04 v1.4 (WaS&NP)
+Now handling font encoding LY ...
+... no UTF-8 mapping file for font encoding LY
+Now handling font encoding LYG ...
+... no UTF-8 mapping file for font encoding LYG
+LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/aurical/aurical.sty
+Package: aurical 2006/10/12 aurical - a set of three decorative fonts with acce
+nts
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/italian.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/japanese.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/ngerman.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/russian.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/spanish.sty)
-(/home/hugisv/texmf/tex/latex/dnd/lib/languages/french.sty) (./sdms.aux)
-\openout1 = `sdms.aux'.
+(/home/hugisv/texmf/tex/latex/dnd/lib/languages/french.sty) (./01.aux)
+\openout1 = `01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1272,15 +1281,15 @@ e
 ))
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 66.
-Package gensymb Info: Math companion symbols declared on input line 66.
-LaTeX Info: Redefining \degree on input line 66.
-LaTeX Info: Redefining \celsius on input line 66.
+(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 116.
+Package gensymb Info: Math companion symbols declared on input line 116.
+LaTeX Info: Redefining \degree on input line 116.
+LaTeX Info: Redefining \celsius on input line 116.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 66.
-LaTeX Info: Redefining \ohm on input line 66.
-Package gensymb Info: Using \textohm for \ohm on input line 66.
-Package gensymb Info: Using \textmu for \micro on input line 66.
+erthousand on input line 116.
+LaTeX Info: Redefining \ohm on input line 116.
+Package gensymb Info: Using \textohm for \ohm on input line 116.
+Package gensymb Info: Using \textmu for \micro on input line 116.
 
 ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -1291,40 +1300,40 @@ ABD: EveryShipout initializing macros
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(54.2025pt, 489.10287pt, 54.2025pt)
-* v-part:(T,H,B)=(33.24467pt, 753.98596pt, 57.81621pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=489.10287pt
-* \textheight=753.98596pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-18.06749pt
-* \topmargin=-69.0928pt
+* \textwidth=483.69687pt
+* \textheight=717.00946pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-45.43198pt
 * \headheight=12.0pt
 * \headsep=18.06749pt
 * \topskip=10.0pt
 * \footskip=23.12692pt
-* \marginparwidth=48.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=115.0pt
+* \marginparsep=7.0pt
 * \columnsep=23.84923pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidetrue
 * \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 66.
+LaTeX Info: Redefining \microtypecontext on input line 116.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 66.
+LaTeX Info: Redefining \showhyphens on input line 116.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1333,7 +1342,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 66.
+LaTeX Info: Redefining \selectfont on input line 116.
 \c@mv@tabular=\count360
 \c@mv@boldtabular=\count361
 
@@ -1341,242 +1350,58 @@ LaTeX Info: Redefining \selectfont on input line 66.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 66.
+ on input line 116.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count362
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 67.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 67.
-LaTeX Font Info:    Trying to load font information for TS1+pbk on input line 6
-7.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pbk.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/aurical/T1AuriocusKalligraphicus.fd)
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 117--145
+[][][]  
+ []
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pbk.fd
-File: ts1pbk.fd 2001/06/04 font definitions for TS1/pbk.
-)
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <10> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 67.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pbk' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <7> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <5> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <24.88> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <60> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <24.88> on input line 67.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 67.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 67.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <24.88> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <20.74> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <17.28> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <20.74> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <20.74> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 67.
-LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <5> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 67.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 153.
+
+LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/m/n' will be
+(Font)              scaled to size 24.88794pt on input line 153.
+
 <img/paper.jpg, id=29, 614.295pt x 794.97pt>
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 68.
+Package pdftex.def Info: img/paper.jpg  used on input line 154.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 68.
+Package pdftex.def Info: img/paper.jpg  used on input line 154.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 68.
+Package pdftex.def Info: img/paper.jpg  used on input line 154.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
- [1
-
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/hugisv/texmf/tex/lat
-ex/dnd/img/paper.jpg>]
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 
-71.
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
-File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `jkpss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/jkpss/b/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+GilliusADFNoTwo-LF o
-n input line 71.
-
-(/usr/share/texlive/texmf-dist/tex/latex/gillius/T1GilliusADFNoTwo-LF.fd
-File: T1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for T1/Gil
-liusADFNoTwo-LF.
-)
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 71.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `GilliusADFNoTwo-LF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 71.
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 72.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 86.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 86.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <9> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 86.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <6> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 86.
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 100.
-LaTeX Font Info:    Trying to load font information for TS1+GilliusADFNoTwo-LF 
-on input line 100.
-
-(/usr/share/texlive/texmf-dist/tex/latex/gillius/TS1GilliusADFNoTwo-LF.fd
-File: TS1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for TS1/G
-illiusADFNoTwo-LF.
-)
-LaTeX Font Info:    Font shape `TS1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 100.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `GilliusADFNoTwo-LF' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/jkpss/b/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 248.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 248.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 248.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-
-[2
-
-]
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 357.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 357.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 357.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
- [3]
-Overfull \hbox (9.6517pt too wide) in paragraph at lines 384--384
-[]|\T1/jkpss/b/n/9 Stealth| 
- []
-
-
-Overfull \hbox (6.87068pt too wide) in paragraph at lines 384--384
-[]|\T1/GilliusADFNoTwo-LF/b/n/9 Stealth| 
- []
-
-
-Overfull \hbox (6.87068pt too wide) in paragraph at lines 384--384
-[]|\T1/GilliusADFNoTwo-LF/b/n/9 Stealth| 
- []
-
-
-Overfull \hbox (6.87068pt too wide) in paragraph at lines 384--384
-[]|\T1/GilliusADFNoTwo-LF/b/n/9 Stealth| 
- []
-
-
-Overfull \hbox (3.82567pt too wide) in paragraph at lines 409--409
-\T1/GilliusADFNoTwo-LF/m/n/9 Thrown($\OT1/cmr/m/n/9 20\OML/cmm/m/it/9 =\OT1/cmr
-/m/n/9 60$\T1/GilliusADFNoTwo-LF/m/n/9 )| 
- []
-
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 462.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 462.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 462.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-[4]
-Overfull \hbox (4.57887pt too wide) in paragraph at lines 567--567
-[]|\T1/jkpss/b/n/9 Proficiency
- []
-
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 589.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 589.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-File: img/paper.jpg Graphic file (type jpg)
-<use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 589.
-(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-[5] (./sdms.aux) ) 
+ex/dnd/img/paper.jpg>] (./01.aux) ) 
 Here is how much of TeX's memory you used:
- 38732 strings out of 481239
- 920452 string characters out of 5920377
- 1428932 words of memory out of 5000000
- 53182 multiletter control sequences out of 15000+600000
- 588655 words of font info for 92 fonts, out of 8000000 for 9000
+ 38363 strings out of 481239
+ 912904 string characters out of 5920377
+ 1389829 words of memory out of 5000000
+ 52846 multiletter control sequences out of 15000+600000
+ 540842 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,98p,899b,1093s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfonts/kpfont
-s-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/s
-hare/texlive/texmf-dist/fonts/enc/dvips/gillius/gls_efuo7w.enc}{/usr/share/texl
-ive/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc}</usr/share/texlive/texmf
--dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Bold.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/j
-kpssbn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpssbne
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on sdms.pdf (5 pages, 1752130 bytes).
+ 70i,17n,98p,897b,844s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvi
+ps/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/aurical/Aurioc
+usKalligraphicus.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubk
+l8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/yfonts-t1/ygoth.pfb>
+Output written on 01.pdf (1 page, 1651025 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23672 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 9842 words of extra memory for PDF output out of 10000 (max. 10000000)
 
