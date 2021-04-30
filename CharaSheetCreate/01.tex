@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{dndbook} %a4, 10pt, book (idk why i did that...), 2 cols, dnd-themed
+\documentclass[a4paper,10pt,bg=full]{dndbook} %a4, 10pt, bg=print / full
 \usepackage[english]{babel} %language
 \usepackage[utf8]{inputenc} %lovely utf-8
 \usepackage{graphicx} %images
@@ -26,22 +26,28 @@
 \geometry { % paper type + spacing
 	a4paper,
 	top=2cm,
-	bottom=2.5cm,
+	bottom=2cm,
 	left=2cm,
 	right=2cm
 }
-\newcommand*\circled[1]{
+\newcommand*\circled[2][2pt]{
 	\tikz
 	[
+		decoration={
+			random steps,
+			amplitude=1pt,
+			segment length=5pt
+		},
 		baseline=(char.base)
 	]{
 		\node
 		[
+			decorate,
 			shape=circle,
 			draw,
-			inner sep=2pt
+			inner sep=#1-1pt
 		]
-		(char) {#1};
+		(char) {#2};
 	}
 }
 
@@ -83,32 +89,39 @@
 % DmgLilac
 
 %config:
-\def\Name{}
+\def\Name{Example Name}
 
-\def\CharaClass{}
-\def\Level{}
-\def\Background{}
-\def\Playername{}
-\def\Race{}
-\def\Alignment{}
-\def\EP{}
+\def\CharaClass{Wizard}
+\def\Level{20}
+\def\Background{Far Traveler}
+\def\Playername{Bruno}
+\def\Race{WoodWoad}
+\def\Alignment{Chaotic Evil}
+\def\EP{420'699}
 
-\def\Str{}
-\def\Dex{}
-\def\Con{}
-\def\Int{}
-\def\Wis{}
-\def\Cha{}
+\def\Speed{30}
+\def\Initiative{+4}
+\def\AC{14}
 
-\def\StrMod{}
-\def\DexMod{}
-\def\ConMod{}
-\def\IntMod{}
-\def\WisMod{}
-\def\ChaMod{}
+\def\MaxHP{69}
+\def\HitDice{d16}
 
-\def\firstStat{}
-\def\secondStat{}
+\def\Str{8}
+\def\Dex{18}
+\def\Con{12}
+\def\Int{20}
+\def\Wis{12}
+\def\Cha{10}
+
+\def\StrMod{-1}
+\def\DexMod{+4}
+\def\ConMod{+1}
+\def\IntMod{+5}
+\def\WisMod{+1}
+\def\ChaMod{0}
+
+\def\firstStat{Int}
+\def\secondStat{Wis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %											Begin with the fucking document														%
@@ -119,36 +132,88 @@
 			\Huge{\Fontauri\Name}\\\hline
 			\tiny{Character Name}\\
 		\end{tabularx}
-	
+		\Fontauri\Huge{AC\circled{\AC}\hspace{0.3cm} Initiative\circled{\Initiative}\hspace{0.3cm} Speed\circled{\Speed \small$^{ft}$}\\
+		Hit Dice\circled{\HitDice}\hspace{0.3cm} Total\circled{\Level}\hspace{0.3cm} Used\circled[12pt]{}}\vspace*{.5cm}\\
 	\end{minipage}%
 	\begin{minipage}[t]{.5\linewidth} % head right
-		\strut\vspace*{-1.16\baselineskip}\newline %correct offset because of a fontsize and b minipage
+		\strut\vspace*{-.94\baselineskip}\newline %correct offset because of a fontsize and b minipage
 		\begin{tabularx}{\textwidth}{XXX}
-			\CharaClass\space\Level &\Background &\Playername\\\hline
+			\Fontauri\CharaClass\space\Level &\Fontauri\Background &\Fontauri\Playername\\\hline
 			\tiny{Class \& Level}	& \tiny{Background}	&\tiny{Player Name}\\
-			\Race &\Alignment &\EP\\\hline
+			\Fontauri\Race &\Fontauri\Alignment &\Fontauri\EP\\\hline
 			\tiny{Race}	& \tiny{Alignment}	&\tiny{EP}\\
 		\end{tabularx}
 		\vspace*{.5cm}\\
+		\Fontauri\huge{
 		\begin{tabular}{cccccc}
 			Str & Dex & Con & Int & Wis & Cha \\ \hline
 			\Str & \Dex & \Con & \Int & \Wis & \Cha\\
-			\ifthenelse{\equal{\firstStat}{Str}}{$\bullet$}{\ifthenelse{\equal{\secondStat}{Str}}{$\bullet$}{}} &
-			\ifthenelse{\equal{\firstStat}{Dex}}{$\bullet$}{\ifthenelse{\equal{\secondStat}{Dex}}{$\bullet$}{}} &
-			\ifthenelse{\equal{\firstStat}{Con}}{$\bullet$}{\ifthenelse{\equal{\secondStat}{Con}}{$\bullet$}{}} &
-			\ifthenelse{\equal{\firstStat}{Int}}{$\bullet$}{\ifthenelse{\equal{\secondStat}{Int}}{$\bullet$}{}} &
-			\ifthenelse{\equal{\firstStat}{Wis}}{$\bullet$}{\ifthenelse{\equal{\secondStat}{Wis}}{$\bullet$}{}} &
-			\ifthenelse{\equal{\firstStat}{Cha}}{$\bullet$}{\ifthenelse{\equal{\secondStat}{Cha}}{$\bullet$}{}}\\
-			\StrMod & \DexMod & \ConMod & \IntMod & \WisMod & \ChaMod 
+			\ifthenelse{\equal{\firstStat}{Str}}{$\star$}{\ifthenelse{\equal{\secondStat}{Str}}{$\star$}{}} &
+			\ifthenelse{\equal{\firstStat}{Dex}}{$\star$}{\ifthenelse{\equal{\secondStat}{Dex}}{$\star$}{}} &
+			\ifthenelse{\equal{\firstStat}{Con}}{$\star$}{\ifthenelse{\equal{\secondStat}{Con}}{$\star$}{}} &
+			\ifthenelse{\equal{\firstStat}{Int}}{$\star$}{\ifthenelse{\equal{\secondStat}{Int}}{$\star$}{}} &
+			\ifthenelse{\equal{\firstStat}{Wis}}{$\star$}{\ifthenelse{\equal{\secondStat}{Wis}}{$\star$}{}} &
+			\ifthenelse{\equal{\firstStat}{Cha}}{$\star$}{\ifthenelse{\equal{\secondStat}{Cha}}{$\star$}{}}\\
+			\StrMod & \DexMod & \ConMod & \IntMod & \WisMod & \ChaMod
 		\end{tabular}
+	}
 	\end{minipage} %
 
-	\begin{center}
-		{\Huge \textgoth{P}} \circled{\Huge +4} \hspace{0.3cm} {\Huge \textgoth{A}} \circled{\Huge+8} \hspace{0.3cm} {\Huge \textgoth{S}} \circled{\Huge+9}
-	\end{center}
-	\begin{center}
-	{\Huge \Fontauri{AC}} \circled{\Huge +4} \hspace{0.3cm} {\Huge \Fontauri{Initiative}} \circled{\Huge+8} \hspace{0.3cm} {\Huge \Fontauri{Speed}} \circled{\Huge+9}
-\end{center}
+	\Fontauri\Huge{HP\circled[12pt]{}\hspace{0.3cm} Max HP\circled{\MaxHP}\hspace{0.3cm} Temp HP\circled[12pt]{}}\vspace*{.5cm}\\
+	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
+		{\huge Skills}\\
+		
+		\textcolor{titlered}{\large Strength \StrMod \ifthenelse{\equal{\firstStat}{Str}}{$\star$}{\ifthenelse{\equal{\secondStat}{Str}}{$\star$}{}}}\\
+		\begin{tabularx}{\textwidth}{llr}
+		&Athletics	&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Constitution \ConMod \ifthenelse{\equal{\firstStat}{Con}}{$\star$}{\ifthenelse{\equal{\secondStat}{Con}}{$\star$}{}}}\\
+		\textcolor{titlered}{\large Dexterity \ifthenelse{\equal{\firstStat}{Dex}}{$\star$}{\ifthenelse{\equal{\secondStat}{Dex}}{$\star$}{}}}\\
+		\begin{tabularx}{\textwidth}{llr}
+			&Acrobatics&\\
+			&Sleight of Hand&\\
+			&Stealth&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Intelligence \IntMod \ifthenelse{\equal{\firstStat}{Int}}{$\star$}{\ifthenelse{\equal{\secondStat}{Int}}{$\star$}{}}}\\
+		\begin{tabularx}{\textwidth}{llr}
+			&Arcana&\\
+			&History&\\
+			&Investigation&\\
+			&Nature&\\
+			&Religion&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Wisdom \WisMod \ifthenelse{\equal{\firstStat}{Wis}}{$\star$}{\ifthenelse{\equal{\secondStat}{Wis}}{$\star$}{}}}\\
+		\begin{tabularx}{\textwidth}{llr}
+			&Animal Handling&\\
+			&Insight&\\
+			&Medicine&\\
+			&Perception&\\
+			&Survival&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Charisma \ChaMod \ifthenelse{\equal{\firstStat}{Cha}}{$\star$}{\ifthenelse{\equal{\secondStat}{Cha}}{$\star$}{}}}\\
+		\begin{tabularx}{\textwidth}{llr}
+    		&Deception&\\
+			&Intimidation&\\
+			&Performance&\\
+			&Persuasion&\\
+		\end{tabularx}
+	\end{minipage}%
+	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
+		\textcolor{titlered}{\large Weapons}\\
+		
+		\textcolor{titlered}{\large Armor}\\
+		
+		\textcolor{titlered}{\large Language}\\
+		
+		\textcolor{titlered}{\large Tools}\\
+	\end{minipage}%
+	\begin{minipage}[t]{.5\linewidth}\raggedleft \Fontauri\normalsize
+		{\huge Features}\\
+		\textcolor{titlered}{\large \Background}\\
+		
+		\textcolor{titlered}{\large \Race}\\
+		
+		\textcolor{titlered}{\large \CharaClass}\\
+	\end{minipage} %
 	
-	{\huge \Fontauri Features}\\
 	\end{document}
