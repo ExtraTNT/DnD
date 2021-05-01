@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  1 MAY 2021 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  1 MAY 2021 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1238,24 +1238,24 @@ Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/french.sty) (./01.aux)
 \openout1 = `01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 218.
-LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 249.
+LaTeX Font Info:    ... okay on input line 249.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1281,15 +1281,15 @@ e
 ))
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 218.
-Package gensymb Info: Math companion symbols declared on input line 218.
-LaTeX Info: Redefining \degree on input line 218.
-LaTeX Info: Redefining \celsius on input line 218.
+(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 249.
+Package gensymb Info: Math companion symbols declared on input line 249.
+LaTeX Info: Redefining \degree on input line 249.
+LaTeX Info: Redefining \celsius on input line 249.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 218.
-LaTeX Info: Redefining \ohm on input line 218.
-Package gensymb Info: Using \textohm for \ohm on input line 218.
-Package gensymb Info: Using \textmu for \micro on input line 218.
+erthousand on input line 249.
+LaTeX Info: Redefining \ohm on input line 249.
+Package gensymb Info: Using \textohm for \ohm on input line 249.
+Package gensymb Info: Using \textmu for \micro on input line 249.
 
 ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -1326,14 +1326,14 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 218.
+LaTeX Info: Redefining \microtypecontext on input line 249.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 218.
+LaTeX Info: Redefining \showhyphens on input line 249.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1342,7 +1342,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 218.
+LaTeX Info: Redefining \selectfont on input line 249.
 \c@mv@tabular=\count360
 \c@mv@boldtabular=\count361
 
@@ -1350,7 +1350,7 @@ LaTeX Info: Redefining \selectfont on input line 218.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 218.
+ on input line 249.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
@@ -1361,110 +1361,153 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/share/texlive/texmf-dist/tex/latex/aurical/T1AuriocusKalligraphicus.fd)
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/m/n' will be
-(Font)              scaled to size 11.99997pt on input line 224.
+(Font)              scaled to size 11.99997pt on input line 255.
 
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/m/n' will be
-(Font)              scaled to size 10.79997pt on input line 224.
+(Font)              scaled to size 10.79997pt on input line 255.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 224.
+(Font)              <9> on input line 255.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 224.
+(Font)              <6> on input line 255.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <9> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 224.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 255.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <6> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 224.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 255.
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/m/n' will be
-(Font)              scaled to size 24.88794pt on input line 236.
+(Font)              scaled to size 24.88794pt on input line 267.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 237.
+(Font)              <20.74> on input line 268.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 237.
+(Font)              <14.4> on input line 268.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 237.
+(Font)              <12> on input line 268.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <20.74> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 237.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 268.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <14.4> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 237.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 268.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <12> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 237.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 268.
 
-Overfull \hbox (8.59775pt too wide) in paragraph at lines 237--249
+Overfull \hbox (8.59775pt too wide) in paragraph at lines 268--280
 [][]
  []
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 219--250
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 250--281
 [][][]  
  []
 
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/m/n' will be
-(Font)              scaled to size 14.39996pt on input line 255.
+(Font)              scaled to size 14.39996pt on input line 286.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 266.
+(Font)              <8> on input line 297.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <8> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 266.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 297.
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
 (Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
-e 303.
+e 321.
+
+
+LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/bx/n' will be
+(Font)              scaled to size 11.99997pt on input line 321.
 
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
 (Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
-e 305.
+e 321.
 
 
 LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
 (Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
-e 307.
+e 321.
 
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 252--309
-[][][][]  
+LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
+(Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
+e 321.
+
+
+LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
+(Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
+e 337.
+
+
+LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
+(Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
+e 339.
+
+
+LaTeX Font Warning: Font shape `T1/AuriocusKalligraphicus/b/n' undefined
+(Font)              using `T1/AuriocusKalligraphicus/bx/n' instead on input lin
+e 341.
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 283--354
+[][][][] 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 <img/paper.jpg, id=29, 614.295pt x 794.97pt>
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 309.
+Package pdftex.def Info: img/paper.jpg  used on input line 354.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 309.
+Package pdftex.def Info: img/paper.jpg  used on input line 354.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 309.
+Package pdftex.def Info: img/paper.jpg  used on input line 354.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/hugisv/texmf/tex/lat
-ex/dnd/img/paper.jpg>] (./01.aux) ) 
+ex/dnd/img/paper.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: img/paper.jpg Graphic file (type jpg)
+<use img/paper.jpg>
+Package pdftex.def Info: img/paper.jpg  used on input line 354.
+(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
+File: img/paper.jpg Graphic file (type jpg)
+<use img/paper.jpg>
+Package pdftex.def Info: img/paper.jpg  used on input line 354.
+(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
+File: img/paper.jpg Graphic file (type jpg)
+<use img/paper.jpg>
+Package pdftex.def Info: img/paper.jpg  used on input line 354.
+(pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
+ [2]
+(./01.aux) ) 
 Here is how much of TeX's memory you used:
- 38665 strings out of 481239
- 919462 string characters out of 5920377
- 1397857 words of memory out of 5000000
- 53143 multiletter control sequences out of 15000+600000
+ 38669 strings out of 481239
+ 919525 string characters out of 5920377
+ 1400857 words of memory out of 5000000
+ 53147 multiletter control sequences out of 15000+600000
  547950 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,98p,897b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvi
-ps/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/aurical/Aurioc
-usKalligraphicus.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/aurical/
-AuriocusKalligraphicusBold.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on 01.pdf (1 page, 1700366 bytes).
+ 70i,17n,98p,897b,1101s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sh
+are/texlive/texmf-dist/fonts/type1/public/aurical/AuriocusKalligraphicus.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/aurical/AuriocusKalligraphicusB
+old.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on 01.pdf (2 pages, 1704058 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  15474 words of extra memory for PDF output out of 17280 (max. 10000000)
 

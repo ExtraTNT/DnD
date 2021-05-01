@@ -105,7 +105,7 @@
 \def\Prof{+6}
 
 \def\MaxHP{69}
-\def\HitDice{d16}
+\def\HitDice{d6}
 
 \def\Str{8}
 \def\Dex{18}
@@ -174,6 +174,30 @@
 \def\PerformanceProf{0}
 \def\PersuasionProf{0}
 
+\def\WeaponEquipment{
+	%max 4 weapons -> with some only 3, with morningstar & co 5
+		\textbf{Shortsword}\\
+		\raggedleft
+		1d6 + 4 Piercing\\
+		Light, Finesse, Bla, Blub\\
+		\raggedright
+		\textbf{Shortsword}\\
+		\raggedleft
+		1d6 + 4 Piercing\\
+		Light, Finesse, Bla, Blub\\
+		\raggedright
+		\textbf{Shortsword}\\
+		\raggedleft
+		1d6 + 4 Piercing\\
+		Light, Finesse, Bla, Blub\\
+		\raggedright
+		\textbf{Shortsword}\\
+		\raggedleft
+		1d6 + 4 Piercing\\
+		Light, Finesse, Bla, Blub\\
+		\raggedright
+}
+
 \def\WeaponProf{
 	\begin{itemize}
 		\item[$\star$] Longsword
@@ -212,6 +236,13 @@
 	\end{tabularx}
 }
 
+%static
+\def\Equipment{
+	\begin{tabularx}{\textwidth}{lX}
+		%\textbf{Rope}	& $50ft$
+	\end{tabularx}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %											Begin with the fucking document														%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,7 +253,7 @@
 			\tiny{Character Name}\\
 		\end{tabularx}
 		\Fontauri\Huge{AC\circled{\AC}\hspace{0.3cm} Initiative\circled{\Initiative}\hspace{0.3cm} Speed\circled{\Speed \small$^{ft}$}\hspace{0.3cm} Bonus\circled{\Prof}\\
-		Hit Dice\circled{\HitDice}\hspace{0.3cm} Total\circled{\Level}\hspace{0.3cm} Used\circled[12pt]{}}\vspace*{.5cm}\\
+		Hit Dice\circled{\HitDice}\hspace{0.3cm} Total\circled{\Level}\hspace{0.3cm} Used\circled[12pt]{}}\vspace*{.25cm}\\
 	\end{minipage}%
 	\begin{minipage}[t]{.5\linewidth} % head right
 		\strut\vspace*{-.94\baselineskip}\newline %correct offset because of a fontsize and b minipage
@@ -246,7 +277,7 @@
 			\StrMod & \DexMod & \ConMod & \IntMod & \WisMod & \ChaMod
 		\end{tabular}
 	}
-	\end{minipage} %
+	\end{minipage}%
 
 	\Fontauri\Huge{HP\circled[12pt]{}\hspace{0.3cm} Max HP\circled{\MaxHP}\hspace{0.3cm} Temp HP\circled[12pt]{}}\vspace*{.5cm}\\
 	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
@@ -286,8 +317,11 @@
 			\ifthenelse{\equal{\PerformanceProf}{1}}{$\star$}{}&Performance&\Performance\\
 			\ifthenelse{\equal{\PersuasionProf}{1}}{$\star$}{}&Persuasion&\Persuasion\\
 		\end{tabularx}
+		\textcolor{titlered}{\large Weapons}\linebreak
+		\WeaponEquipment
 	\end{minipage}%
 	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
+		{\huge Proficiencies}
 		\textcolor{titlered}{\large Weapons}\\
 		\WeaponProf
 		\textcolor{titlered}{\large Armor}\\
@@ -305,5 +339,16 @@
 		\RaceFeature
 		\textcolor{titlered}{\large \CharaClass}\\
 		\ClassFeature
+	\end{minipage} %
+	\pagebreak
+	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize
+		{\huge Equipment}\\
+		\Equipment
+		
+	\end{minipage}%
+	\begin{minipage}[t][\textheight]{.5\linewidth}
+		\Fontauri\huge{
+			PP\circled[12pt]{}GP\circled[12pt]{}EP\circled[12pt]{}\\
+			SP\circled[12pt]{}CP\circled[12pt]{}}\\
 	\end{minipage} %
 \end{document}
