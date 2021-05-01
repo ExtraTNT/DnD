@@ -121,8 +121,96 @@
 \def\WisMod{+1}
 \def\ChaMod{0}
 
+% save profs
 \def\firstStat{Int}
 \def\secondStat{Wis}
+
+% modifiers for skills (add prof bonus if prof)
+%str
+\def\Athletics{}
+%dex
+\def\Acrobatics{}
+\def\SleightOfHand{}
+\def\Stealth{}
+%int
+\def\Arcana{}
+\def\History{}
+\def\Investigation{}
+\def\Nature{}
+\def\Religion{}
+%wis
+\def\AnimalHandling{}
+\def\Insight{}
+\def\Medicine{}
+\def\Perception{}
+\def\Survival{}
+%cha
+\def\Deception{}
+\def\Intimidation{}
+\def\Performance{}
+\def\Persuasion{}
+
+% prof (0/1)
+\def\AthleticsProf{0}
+%dex
+\def\AcrobaticsProf{0}
+\def\SleightOfHandProf{0}
+\def\StealthProf{0}
+%int
+\def\ArcanaProf{0}
+\def\HistoryProf{0}
+\def\InvestigationProf{0}
+\def\NatureProf{0}
+\def\ReligionProf{0}
+%wis
+\def\AnimalHandlingProf{0}
+\def\InsightProf{0}
+\def\MedicineProf{0}
+\def\PerceptionProf{0}
+\def\SurvivalProf{0}
+%cha
+\def\DeceptionProf{0}
+\def\IntimidationProf{0}
+\def\PerformanceProf{0}
+\def\PersuasionProf{0}
+
+\def\WeaponProf{
+	\begin{itemize}
+		\item[$\star$] Longsword
+	\end{itemize}
+}
+\def\ArmorProf{
+	\begin{itemize}
+		\item[$\star$] Light Armor
+	\end{itemize}
+}
+\def\LanguageProf{
+	\begin{itemize}
+		\item[$\star$] Common
+	\end{itemize}
+}
+\def\ToolProf{
+	\begin{itemize}
+		\item[$\star$] Smith’s tools
+	\end{itemize}
+}
+
+\def\ClassFeature{
+	\begin{tabularx}{\textwidth}{lX}
+		\textbf{Spellcasting}	& You have a spellbook containing spells.\\
+	\end{tabularx}
+}
+\def\RaceFeature{
+	\begin{tabularx}{\textwidth}{lX}
+		%\textbf{Darkvision}	& 60ft dim Light see as bright, darkness as dim. No color in darkness.\\
+		\textbf{Darkvision}	& 60ft\\
+	\end{tabularx}
+}
+\def\BackgroundFeature{
+	\begin{tabularx}{\textwidth}{lX}
+		\textbf{All Eyes on You}	& You can parley attention into access to people and places.\\
+	\end{tabularx}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %											Begin with the fucking document														%
@@ -166,55 +254,56 @@
 		
 		\textcolor{titlered}{\large Strength \StrMod \ifthenelse{\equal{\firstStat}{Str}}{$\star$}{\ifthenelse{\equal{\secondStat}{Str}}{$\star$}{}}}\\
 		\begin{tabularx}{\textwidth}{llr}
-		&Athletics	&\\
+			\ifthenelse{\equal{\AthleticsProf}{1}}{$\star$}{}&Athletics&\Athletics\\
 		\end{tabularx}
 		\textcolor{titlered}{\large Constitution \ConMod \ifthenelse{\equal{\firstStat}{Con}}{$\star$}{\ifthenelse{\equal{\secondStat}{Con}}{$\star$}{}}}\\
 		\textcolor{titlered}{\large Dexterity \DexMod \ifthenelse{\equal{\firstStat}{Dex}}{$\star$}{\ifthenelse{\equal{\secondStat}{Dex}}{$\star$}{}}}\\
 		\begin{tabularx}{\textwidth}{llr}
-			&Acrobatics&\\
-			&Sleight of Hand&\\
-			&Stealth&\\
+			\ifthenelse{\equal{\AcrobaticsProf}{1}}{$\star$}{}&Acrobatics&\Acrobatics\\
+			\ifthenelse{\equal{\SleightOfHandProf}{1}}{$\star$}{}&Sleight of Hand&\SleightOfHand\\
+			\ifthenelse{\equal{\StealthProf}{1}}{$\star$}{}&Stealth&\Stealth\\
 		\end{tabularx}
 		\textcolor{titlered}{\large Intelligence \IntMod \ifthenelse{\equal{\firstStat}{Int}}{$\star$}{\ifthenelse{\equal{\secondStat}{Int}}{$\star$}{}}}\\
 		\begin{tabularx}{\textwidth}{llr}
-			&Arcana&\\
-			&History&\\
-			&Investigation&\\
-			&Nature&\\
-			&Religion&\\
+			\ifthenelse{\equal{\ArcanaProf}{1}}{$\star$}{}&Arcana&\Arcana\\
+			\ifthenelse{\equal{\HistoryProf}{1}}{$\star$}{}&History&\History\\
+			\ifthenelse{\equal{\InvestigationProf}{1}}{$\star$}{}&Investigation&\Investigation\\
+			\ifthenelse{\equal{\NatureProf}{1}}{$\star$}{}&Nature&\Nature\\
+			\ifthenelse{\equal{\ReligionProf}{1}}{$\star$}{}&Religion&\Religion\\
 		\end{tabularx}
 		\textcolor{titlered}{\large Wisdom \WisMod \ifthenelse{\equal{\firstStat}{Wis}}{$\star$}{\ifthenelse{\equal{\secondStat}{Wis}}{$\star$}{}}}\\
 		\begin{tabularx}{\textwidth}{llr}
-			&Animal Handling&\\
-			&Insight&\\
-			&Medicine&\\
-			&Perception&\\
-			&Survival&\\
+			\ifthenelse{\equal{\AnimalHandlingProf}{1}}{$\star$}{}&Animal Handling&\AnimalHandling\\
+			\ifthenelse{\equal{\InsightProf}{1}}{$\star$}{}&Insight&\Insight\\
+			\ifthenelse{\equal{\MedicineProf}{1}}{$\star$}{}&Medicine&\Medicine\\
+			\ifthenelse{\equal{\PersuasionProf}{1}}{$\star$}{}&Perception&\Perception\\
+			\ifthenelse{\equal{\SurvivalProf}{1}}{$\star$}{}&Survival&\Survival\\
 		\end{tabularx}
 		\textcolor{titlered}{\large Charisma \ChaMod \ifthenelse{\equal{\firstStat}{Cha}}{$\star$}{\ifthenelse{\equal{\secondStat}{Cha}}{$\star$}{}}}\\
 		\begin{tabularx}{\textwidth}{llr}
-    		&Deception&\\
-			&Intimidation&\\
-			&Performance&\\
-			&Persuasion&\\
+    		\ifthenelse{\equal{\DeceptionProf}{1}}{$\star$}{}&Deception&\Deception\\
+			\ifthenelse{\equal{\IntimidationProf}{1}}{$\star$}{}&Intimidation&\Intimidation\\
+			\ifthenelse{\equal{\PerformanceProf}{1}}{$\star$}{}&Performance&\Performance\\
+			\ifthenelse{\equal{\PersuasionProf}{1}}{$\star$}{}&Persuasion&\Persuasion\\
 		\end{tabularx}
 	\end{minipage}%
 	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
 		\textcolor{titlered}{\large Weapons}\\
-		
+		\WeaponProf
 		\textcolor{titlered}{\large Armor}\\
-		
+		\ArmorProf
 		\textcolor{titlered}{\large Language}\\
-		
+		\LanguageProf
 		\textcolor{titlered}{\large Tools}\\
+		\ToolProf
 	\end{minipage}%
 	\begin{minipage}[t]{.5\linewidth}\raggedleft \Fontauri\normalsize
 		{\huge Features}\\
 		\textcolor{titlered}{\large \Background}\\
-		
+		\BackgroundFeature
 		\textcolor{titlered}{\large \Race}\\
-		
+		\RaceFeature
 		\textcolor{titlered}{\large \CharaClass}\\
+		\ClassFeature
 	\end{minipage} %
-	
 \end{document}
