@@ -21,6 +21,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 
+\graphicspath{ {./images/} }
+
 \pagestyle{empty} % no footer
 
 \geometry { % paper type + spacing
@@ -174,26 +176,52 @@
 \def\PerformanceProf{0}
 \def\PersuasionProf{0}
 
+\def\Age{12}
+\def\Height{5'}
+\def\Weight{2lb}
+\def\Skin{Wood}
+\def\Eyes{Pale}
+\def\Hair{none}
+
+\def\SpellAbility{int}
+\def\SpellAtk{+11}
+\def\SpellSaveDC{19}
+
+\def\FirstLevelSlots{9}
+\def\SecondLevelSlots{8}
+\def\ThirdLevelSlots{7}
+\def\FourthLevelSlots{6}
+\def\FifthLevelSlots{5}
+\def\SixthLevelSlots{4}
+\def\SeventhLevelSlots{3}
+\def\EightLevelSlots{2}
+\def\NinthLeveleSlots{1}
+
+
+\def\Description{
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+}
+
 \def\WeaponEquipment{
 	%max 4 weapons -> with some only 3, with morningstar & co 5
 		\textbf{Shortsword}\\
 		\raggedleft
-		1d6 + 4 Piercing\\
+		+10 1d6 + 4 Piercing\\
 		Light, Finesse, Bla, Blub\\
 		\raggedright
 		\textbf{Shortsword}\\
 		\raggedleft
-		1d6 + 4 Piercing\\
+		+10 1d6 + 4 Piercing\\
 		Light, Finesse, Bla, Blub\\
 		\raggedright
 		\textbf{Shortsword}\\
 		\raggedleft
-		1d6 + 4 Piercing\\
+		+10 1d6 + 4 Piercing\\
 		Light, Finesse, Bla, Blub\\
 		\raggedright
 		\textbf{Shortsword}\\
 		\raggedleft
-		1d6 + 4 Piercing\\
+		+10 1d6 + 4 Piercing\\
 		Light, Finesse, Bla, Blub\\
 		\raggedright
 }
@@ -222,6 +250,7 @@
 \def\ClassFeature{
 	\begin{tabularx}{\textwidth}{lX}
 		\textbf{Spellcasting}	& You have a spellbook containing spells.\\
+		\textbf{Example Feature 2}	& Lorem ipsum...\\
 	\end{tabularx}
 }
 \def\RaceFeature{
@@ -236,7 +265,7 @@
 	\end{tabularx}
 }
 
-%static
+%static -> don't use for changing stuff, like arows, food etc
 \def\Equipment{
 	\begin{tabularx}{\textwidth}{lX}
 		%\textbf{Rope}	& $50ft$
@@ -344,11 +373,41 @@
 	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize
 		{\huge Equipment}\\
 		\Equipment
-		
 	\end{minipage}%
-	\begin{minipage}[t][\textheight]{.5\linewidth}
-		\Fontauri\huge{
+	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize\Fontauri
+		{\huge
 			PP\circled[12pt]{}GP\circled[12pt]{}EP\circled[12pt]{}\\
-			SP\circled[12pt]{}CP\circled[12pt]{}}\\
+			SP\circled[12pt]{}CP\circled[12pt]{}
+		}\\
+		\begin{tabularx}{\textwidth}{XXX}
+			\Fontauri\Age &\Fontauri\Height &\Fontauri\Weight\\\hline
+			\tiny{Age}	& \tiny{Height}	&\tiny{Weight}\\
+			\Fontauri\Eyes &\Fontauri\Skin &\Fontauri\Hair\\\hline
+			\tiny{Eyes}	& \tiny{Skin}	&\tiny{Hair}\\
+		\end{tabularx}
+		\includegraphics[width=\linewidth]{Character.png}
+		{\huge Character description}\\
+		\Description
 	\end{minipage} %
+	{\huge Spellcasting}
+	\begin{minipage}[t]{\linewidth}
+		\begin{center}\Fontauri\normalsize
+			{\Large Spellcasting Ability \circled{\SpellAbility}Spell Attack Modifier\circled{\SpellAtk}Spell Save DC\circled{\SpellSaveDC}}
+			\vspace*{.5cm}\\
+			\begin{tabularx}{\linewidth}{XXXXXXXXX}
+				\multicolumn{9}{c}{\LARGE Spellslots}\\
+				1&2&3&4&5&6&7&8&9\\\hline
+				\FirstLevelSlots&
+				\SecondLevelSlots&
+				\ThirdLevelSlots&
+				\FourthLevelSlots&
+				\FifthLevelSlots&
+				\SixthLevelSlots&
+				\SeventhLevelSlots&
+				\EightLevelSlots&
+				\NinthLeveleSlots
+			\end{tabularx}
+		\end{center}
+	\end{minipage}%
+
 \end{document}
