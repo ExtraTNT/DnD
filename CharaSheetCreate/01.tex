@@ -2,24 +2,20 @@
 \usepackage[english]{babel} %language
 \usepackage[utf8]{inputenc} %lovely utf-8
 \usepackage{graphicx} %images
-\usepackage{wrapfig} %images
 \usepackage{array} %allways use this shit, idk why
 \usepackage{tikz} %draw stuff
 \usepackage{ifthen} %draw stuff
 \usetikzlibrary{calc,fadings} %draw stuff
 \usepackage{xspace} %usefull idk, allways import this stuff
-\usepackage{dirtytalk} %\say because fuck it
 \usepackage{setspace} %don't ask, kind of like it...
 \usepackage{pgfplots}
 \usepackage{tabularx} % table
 \usepackage[singlelinecheck=false]{caption} %idk dndbook...
 \usepackage{listings} %idk dndbook...
-\usepackage{shortvrb} %not used yet...
 \usepackage{stfloats} %idk dndbook
 \usepackage{yfonts}
 \usepackage{aurical}
 \usepackage[T1]{fontenc}
-\usepackage{tabularx}
 
 \graphicspath{ {./images/} }
 
@@ -54,7 +50,7 @@
 }
 
 \singlespacing
-\makeatletter %because of titlepage and \HUGE
+\makeatletter
 
 \def \license {GNU Free Documentation License (https://www.gnu.org/licenses/fdl-1.3)}
 \def \author {Sven Hugi}%if you edit this document, add your name... <3
@@ -321,9 +317,7 @@
 	\end{tabularx}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%											Begin with the fucking document														%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Document%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 	\begin{minipage}[t]{.5\linewidth} % head left
 		\begin{tabularx}{\textwidth}{X}

@@ -1,0 +1,167 @@
+\documentclass[a4paper,10pt,bg=print]{dndbook} %a4, 10pt, bg=print / full
+\usepackage[english]{babel} %language
+\usepackage[utf8]{inputenc} %lovely utf-8
+\usepackage{array} %allways use this shit, idk why
+\usepackage{tikz} %draw stuff
+\usetikzlibrary{calc,fadings} %draw stuff
+\usepackage{setspace} %don't ask, kind of like it...
+\usepackage{pgfplots}
+\usepackage{tabularx} % table
+\usepackage[singlelinecheck=false]{caption} %idk dndbook...
+\usepackage{listings} %idk dndbook...
+\usepackage{stfloats} %idk dndbook
+\usepackage{yfonts}
+\usepackage{aurical}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty} % no footer
+
+\geometry { % paper type + spacing
+	a4paper,
+	top=2cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm
+}
+\newcommand*\circled[2][2pt]{
+	\tikz
+	[
+		decoration={
+			random steps,
+			amplitude=1pt,
+			segment length=5pt
+		},
+		baseline=(char.base)
+	]{
+		\node
+		[
+			decorate,
+			shape=circle,
+			draw,
+			inner sep=#1-1pt
+		]
+		(char) {#2};
+	}
+}
+
+\singlespacing
+\makeatletter
+
+\def \license {GNU Free Documentation License (https://www.gnu.org/licenses/fdl-1.3)}
+\def \author {Sven Hugi}%if you edit this document, add your name... <3
+
+%highlighting with some random effect -> looks handmade and i love it... you can use this in you texts
+\begin{document}
+	\begin{minipage}[t]{.5\linewidth} % head left
+		\begin{tabularx}{\textwidth}{X}
+			\\\\\\\hline
+			\tiny{Character Name}\\
+		\end{tabularx}
+		\Fontauri\Huge{AC\circled[12pt]{}\hspace{0.3cm} Initiative\circled[12pt]{}\hspace{0.3cm} Speed\circled[12pt]{}\hspace{0.3cm} Bonus\circled[12pt]{}\\
+		Hit Dice\circled[12pt]{}\hspace{0.3cm} Total\circled[12pt]{}\hspace{0.3cm} Used\circled[12pt]{}}\\
+	\end{minipage}%
+	\begin{minipage}[t]{.5\linewidth} % head right
+		\strut\vspace*{-1.6\baselineskip}\newline %correct offset because of minipage
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\tiny{Class \& Level}	& \tiny{Background}	&\tiny{Player Name}\\
+			&&\\&&\\\hline
+			\tiny{Race}	& \tiny{Alignment}	&\tiny{EP}\\
+		\end{tabularx}\vspace*{.5cm}\\
+		\Fontauri\Large{
+			\begin{tabularx}{\linewidth}{XXXXXX}
+				Str & Dex & Con & Int & Wis & Cha \\ \hline
+				\\\\\\\\
+			\end{tabularx}
+		}
+	\end{minipage}\\
+	\Fontauri{\Huge HP\circled[12pt]{}\hspace{0.3cm} Max HP\circled[12pt]{}\hspace{0.3cm} Temp HP\circled[12pt]{}}\vspace*{.5cm}\\
+	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
+		{\huge Skills}\\
+		\textcolor{titlered}{\large Strength}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Athletics&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Constitution}\\
+		\textcolor{titlered}{\large Dexterity}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Acrobatics&\\
+			&Sleight of Hand&\\
+			&Stealth&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Intelligence}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Arcana&\\
+			&History&\\
+			&Investigation&\\
+			&Nature&\\
+			&Religion&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Wisdom}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Animal Handling&\\
+			&Insight&\\
+			&Medicine&\\
+			&Perception&\\
+			&Survival&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Charisma}\\
+		\begin{tabularx}{\textwidth}{lXr}
+    		&Deception&\\
+			&Intimidation&\\
+			&Performance&\\
+			&Persuasion&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Weapons}\linebreak
+	\end{minipage}%
+	\begin{minipage}[t]{.25\linewidth}\Fontauri\normalsize
+		{\huge Proficiencies}
+		\textcolor{titlered}{\large Weapons}\vspace*{3cm}\\
+		\textcolor{titlered}{\large Armor}\vspace*{3cm}\\
+		\textcolor{titlered}{\large Language}\vspace*{3cm}\\
+		\textcolor{titlered}{\large Tools}\\
+	\end{minipage}%
+	\begin{minipage}[t]{.5\linewidth}\raggedleft \Fontauri\normalsize
+		{\huge Features}\\
+	\end{minipage}\\
+	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize
+		{\huge Equipment}\\
+	\end{minipage}%
+	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize\Fontauri
+		{\huge
+			PP\circled[12pt]{}GP\circled[12pt]{}EP\circled[12pt]{}\\
+			SP\circled[12pt]{}CP\circled[12pt]{}
+		}\\
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\tiny{Age}&\tiny{Height}&\tiny{Weight}\\
+			&&\\&&\\\hline
+			\tiny{Eyes}& \tiny{Skin}&\tiny{Hair}\\
+		\end{tabularx}\vspace*{7.5cm}\\
+		{\huge Character description}\\
+	\end{minipage} %
+	{\huge Spellcasting}
+	\begin{center}\Fontauri\normalsize
+		{\Large Spellcasting Ability \circled[12pt]{}Spell Attack Modifier\circled[12pt]{}Spell Save DC\circled[12pt]{}}\vspace*{.25cm}\\
+		\begin{tabularx}{\linewidth}{XXXXXXXXX}
+			\multicolumn{9}{c}{\LARGE Spellslots}\\
+			1&2&3&4&5&6&7&8&9\\\hline
+		\end{tabularx}\vspace*{.5cm}\\
+	\end{center}
+	\begin{minipage}[t]{.334\linewidth}\scriptsize
+		\textcolor{titlered}{\large Cantrips}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 1st Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 2nd Level}
+	\end{minipage}%
+	\begin{minipage}[t]{.333\linewidth}\scriptsize
+		\textcolor{titlered}{\large 3th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 4th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 5th Level}
+	\end{minipage}%
+	\begin{minipage}[t]{.333\linewidth}\scriptsize
+		\textcolor{titlered}{\large 6th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 7th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 8th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 9th Level}\\
+	\end{minipage} %
+\end{document}
