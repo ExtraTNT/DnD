@@ -35,10 +35,10 @@
 	]{
 		\node
 		[
-			decorate,
+			decorate, %comment for non handdrawed look
 			shape=circle,
 			draw,
-			inner sep=#1-1pt
+			inner sep=#1-1pt % looks to big with the random -> remove -1pt if you use it clean
 		]
 		(char) {#2};
 	}
