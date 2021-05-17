@@ -1,0 +1,147 @@
+\documentclass[a4paper,10pt,bg=print]{dndbook} %a4, 10pt, bg=print / full
+\usepackage[english]{babel} %language
+\usepackage[utf8]{inputenc} %lovely utf-8
+\usetikzlibrary{calc,fadings} %draw stuff
+\usepackage{setspace} %don't ask, kind of like it...
+\usepackage{tabularx} % table
+\usepackage{yfonts}
+\usepackage{aurical}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty} % no footer
+
+\geometry { % paper type + spacing
+	a4paper,
+	top=2cm,
+	bottom=2cm,
+	left=2cm,
+	right=2cm
+}
+\singlespacing
+
+\def \license {GNU Free Documentation License (https://www.gnu.org/licenses/fdl-1.3)}
+\def \author {Sven Hugi}%if you edit this document, add your name... <3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Document%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\begin{minipage}[t]{.5\linewidth} % head left
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\multicolumn{3}{X}{\tiny{Character Name}}\\
+			&&\\&&\\\hline
+			\tiny{AC}&\tiny{Initiative}&\tiny{Speed}\\
+			&&\\&&\\\hline
+			\tiny{Hit Dice}&\tiny{Total}&\tiny{Used}\\
+			&&\\&&\\\hline
+			\tiny{Max Hp}&\tiny{Hp}&\tiny{Temp Hp}\\
+			&&\\&&\\\hline
+			\tiny{Proficiency Bonus}
+		\end{tabularx}
+	\end{minipage}%
+	\begin{minipage}[t]{.5\linewidth} % head right
+		\strut\vspace*{-8.18\baselineskip}\newline %correct offset because of a fontsize and b minipage
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\tiny{Class \& Level}	& \tiny{Background}	&\tiny{Player Name}\\
+			&&\\&&\\\hline
+			\tiny{Race}	& \tiny{Alignment}	&\tiny{EP}\\
+		\end{tabularx}\vspace*{.125cm}\\
+		\Fontauri\large{
+			\begin{tabularx}{\linewidth}{XXXXXX}
+				Str & Dex & Con & Int & Wis & Cha\\\hline
+			\end{tabularx}
+	}
+	\end{minipage}\vspace*{.25cm}\\
+	\begin{minipage}[t]{.25\linewidth}\normalsize
+		{\LARGE Skills}\\
+		\textcolor{titlered}{\large Strength}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Athletics&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Constitution}\\
+		\textcolor{titlered}{\large Dexterity}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Acrobatics&\\
+			&Sleight of Hand&\\
+			&Stealth&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Intelligence}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Arcana&\\
+			&History&\\
+			&Investigation&\\
+			&Nature&\\
+			&Religion&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Wisdom}\\
+		\begin{tabularx}{\textwidth}{lXr}
+			&Animal Handling&\\
+			&Insight&\\
+			&Medicine&\\
+			&Perception&\\
+			&Survival&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Charisma}\\
+		\begin{tabularx}{\textwidth}{lXr}
+    		&Deception&\\
+			&Intimidation&\\
+			&Performance&\\
+			&Persuasion&\\
+		\end{tabularx}
+		\textcolor{titlered}{\large Weapons}\linebreak
+	\end{minipage}%
+	\begin{minipage}[t]{.25\linewidth}\normalsize
+		{\LARGE Proficiencies}
+		\textcolor{titlered}{\large Weapons}\vspace*{4cm}\\
+		\textcolor{titlered}{\large Armor}\vspace*{4cm}\\
+		\textcolor{titlered}{\large Language}\vspace*{4cm}\\
+		\textcolor{titlered}{\large Tools}
+	\end{minipage}%
+	\begin{minipage}[t]{.5\linewidth}\raggedleft\normalsize
+		{\LARGE Features}\\
+	\end{minipage}\\
+	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize
+		{\LARGE Equipment}\\
+	\end{minipage}%
+	\begin{minipage}[t][\textheight]{.5\linewidth}\normalsize
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\tiny{PP}&\tiny{GP}	&\tiny{EP}\\
+			&&\\&&\\\hline
+			\tiny{SP}& \tiny{CP}&
+		\end{tabularx}\vspace*{7.5cm}\\
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\tiny{Age}	& \tiny{Height}	&\tiny{Weight}\\
+			&&\\&&\\\hline
+			\tiny{Eyes}	& \tiny{Skin}	&\tiny{Hair}\\
+		\end{tabularx}\vspace*{.25cm}\\
+		{\LARGE Character Description}\\
+	\end{minipage} %
+	{\huge Spellcasting}
+	\begin{center}\normalsize
+		\begin{tabularx}{\textwidth}{XXX}
+			&&\\&&\\\hline
+			\tiny{Spellcasting Ability}	& \tiny{Spell Attack Bonus}	&\tiny{Spell Save DC}
+		\end{tabularx}
+		\begin{tabularx}{\linewidth}{XXXXXXXXX}
+			1&2&3&4&5&6&7&8&9\\\hline
+		\end{tabularx}\vspace*{.75cm}\\
+	\end{center}
+	\begin{minipage}[t]{.334\linewidth}\scriptsize
+		\textcolor{titlered}{\large Cantrips}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 1st Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 2nd Level}\\
+	\end{minipage}%
+	\begin{minipage}[t]{.333\linewidth}\scriptsize
+		\textcolor{titlered}{\large 3th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 4th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 5th Level}\\
+	\end{minipage}%
+	\begin{minipage}[t]{.333\linewidth}\scriptsize
+		\textcolor{titlered}{\large 6th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 7th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 8th Level}\vspace*{6cm}\\
+		\textcolor{titlered}{\large 9th Level}
+	\end{minipage} %
+\end{document}
