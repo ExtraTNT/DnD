@@ -1,73 +1,73 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {section}{Introduction}{4}% 
-\contentsline {chapter}{\numberline {1}Messenger}{5}% 
-\contentsline {section}{Class Features}{5}% 
-\contentsline {subsubsection}{Hit Points}{5}% 
-\contentsline {subsubsection}{Proficiencies}{5}% 
-\contentsline {subsubsection}{Equipment}{5}% 
-\contentsline {subsection}{Attackstyle}{5}% 
-\contentsline {subsubsection}{Sneaky}{5}% 
-\contentsline {subsubsection}{Brutal}{5}% 
-\contentsline {subsection}{Origin}{6}% 
-\contentsline {subsection}{Spellcasting}{6}% 
-\contentsline {chapter}{\numberline {2}Arvandor}{7}% 
-\contentsline {section}{Features of origin}{7}% 
-\contentsline {subsection}{Holy Healing}{7}% 
-\contentsline {subsection}{religious wisdom}{7}% 
-\contentsline {subsection}{Save of the gods}{7}% 
-\contentsline {subsection}{Wisdom of Nature}{7}% 
-\contentsline {subsection}{Save of the Gods 2}{7}% 
-\contentsline {subsection}{Ability Score Improvement}{7}% 
-\contentsline {subsection}{Livesaver}{7}% 
-\contentsline {subsection}{more life energy}{7}% 
-\contentsline {subsection}{Troll the death}{7}% 
-\contentsline {chapter}{\numberline {3}Cania}{8}% 
-\contentsline {section}{Features of origin}{8}% 
-\contentsline {subsection}{Ice-Shield}{8}% 
-\contentsline {subsection}{Wild Magic}{8}% 
-\contentsline {subsection}{Messenger of the Cold}{8}% 
-\contentsline {subsection}{Fighters Life}{8}% 
-\contentsline {subsection}{Ice Skin}{8}% 
-\contentsline {subsection}{Strong Ice Skin}{8}% 
-\contentsline {subsection}{Messenger of the Ice}{8}% 
-\contentsline {chapter}{\numberline {4}Feywild}{9}% 
-\contentsline {section}{Features of origin}{9}% 
-\contentsline {subsection}{Fey Weapontraining}{9}% 
-\contentsline {subsection}{Sneaking in the Woods}{9}% 
-\contentsline {subsection}{Darkvision}{9}% 
-\contentsline {subsection}{Runner of the Woods}{9}% 
-\contentsline {subsection}{Survivor of the Woods}{9}% 
-\contentsline {subsection}{The Wise Wanderer}{9}% 
-\contentsline {subsection}{Wisdom of the Sharpshoter}{9}% 
-\contentsline {subsection}{Naturalist}{9}% 
-\contentsline {subsection}{Druidcraft}{9}% 
-\contentsline {subsection}{Friend of the Animals}{9}% 
-\contentsline {subsection}{Ability Score Improvement}{9}% 
-\contentsline {subsection}{Camouflaged}{9}% 
-\contentsline {subsection}{Helping Hand}{9}% 
-\contentsline {chapter}{\numberline {5}Lunia}{10}% 
-\contentsline {section}{Features of origin}{10}% 
-\contentsline {subsection}{Fighting Inspiration}{10}% 
-\contentsline {subsection}{Untouchable}{10}% 
-\contentsline {subsection}{Counter Attack}{10}% 
-\contentsline {subsection}{Night Life}{10}% 
-\contentsline {subsection}{Fast Hide}{10}% 
-\contentsline {subsection}{Night Runner}{10}% 
-\contentsline {subsection}{Sleepless}{10}% 
-\contentsline {subsection}{Endless Walk}{10}% 
-\contentsline {chapter}{\numberline {6}Mechanus}{11}% 
-\contentsline {section}{Features of origin}{11}% 
-\contentsline {subsection}{Massive Spellcasting}{11}% 
-\contentsline {subsection}{Cantrips}{11}% 
-\contentsline {subsection}{Multiple Spelllists}{11}% 
-\contentsline {chapter}{\numberline {7}Phlegethos}{12}% 
-\contentsline {section}{Features of origin}{12}% 
-\contentsline {subsection}{Fireattack}{12}% 
-\contentsline {subsection}{Fireresistance}{12}% 
-\contentsline {subsection}{Phlegethos Weapontraining}{12}% 
-\contentsline {subsection}{Iron Body}{12}% 
-\contentsline {subsection}{Force of the Fire}{12}% 
-\contentsline {subsection}{Iron Skin}{12}% 
-\contentsline {subsection}{Wild Magic}{12}% 
+\contentsline {section}{Introduction}{4}{}%
+\contentsline {chapter}{\numberline {1}Messenger}{5}{}%
+\contentsline {section}{Class Features}{5}{}%
+\contentsline {subsubsection}{Hit Points}{5}{}%
+\contentsline {subsubsection}{Proficiencies}{5}{}%
+\contentsline {subsubsection}{Equipment}{5}{}%
+\contentsline {subsection}{Attackstyle}{5}{}%
+\contentsline {subsubsection}{Sneaky}{5}{}%
+\contentsline {subsubsection}{Brutal}{5}{}%
+\contentsline {subsection}{Origin}{6}{}%
+\contentsline {subsection}{Spellcasting}{6}{}%
+\contentsline {chapter}{\numberline {2}Arvandor}{7}{}%
+\contentsline {section}{Features of origin}{7}{}%
+\contentsline {subsection}{Holy Healing}{7}{}%
+\contentsline {subsection}{religious wisdom}{7}{}%
+\contentsline {subsection}{Save of the gods}{7}{}%
+\contentsline {subsection}{Wisdom of Nature}{7}{}%
+\contentsline {subsection}{Save of the Gods 2}{7}{}%
+\contentsline {subsection}{Ability Score Improvement}{7}{}%
+\contentsline {subsection}{Livesaver}{7}{}%
+\contentsline {subsection}{more life energy}{7}{}%
+\contentsline {subsection}{Troll the death}{7}{}%
+\contentsline {chapter}{\numberline {3}Cania}{8}{}%
+\contentsline {section}{Features of origin}{8}{}%
+\contentsline {subsection}{Ice-Shield}{8}{}%
+\contentsline {subsection}{Wild Magic}{8}{}%
+\contentsline {subsection}{Messenger of the Cold}{8}{}%
+\contentsline {subsection}{Fighters Life}{8}{}%
+\contentsline {subsection}{Ice Skin}{8}{}%
+\contentsline {subsection}{Strong Ice Skin}{8}{}%
+\contentsline {subsection}{Messenger of the Ice}{8}{}%
+\contentsline {chapter}{\numberline {4}Feywild}{9}{}%
+\contentsline {section}{Features of origin}{9}{}%
+\contentsline {subsection}{Fey Weapontraining}{9}{}%
+\contentsline {subsection}{Sneaking in the Woods}{9}{}%
+\contentsline {subsection}{Darkvision}{9}{}%
+\contentsline {subsection}{Runner of the Woods}{9}{}%
+\contentsline {subsection}{Survivor of the Woods}{9}{}%
+\contentsline {subsection}{The Wise Wanderer}{9}{}%
+\contentsline {subsection}{Wisdom of the Sharpshoter}{9}{}%
+\contentsline {subsection}{Naturalist}{9}{}%
+\contentsline {subsection}{Druidcraft}{9}{}%
+\contentsline {subsection}{Friend of the Animals}{9}{}%
+\contentsline {subsection}{Ability Score Improvement}{9}{}%
+\contentsline {subsection}{Camouflaged}{9}{}%
+\contentsline {subsection}{Helping Hand}{9}{}%
+\contentsline {chapter}{\numberline {5}Lunia}{10}{}%
+\contentsline {section}{Features of origin}{10}{}%
+\contentsline {subsection}{Fighting Inspiration}{10}{}%
+\contentsline {subsection}{Untouchable}{10}{}%
+\contentsline {subsection}{Counter Attack}{10}{}%
+\contentsline {subsection}{Night Life}{10}{}%
+\contentsline {subsection}{Fast Hide}{10}{}%
+\contentsline {subsection}{Night Runner}{10}{}%
+\contentsline {subsection}{Sleepless}{10}{}%
+\contentsline {subsection}{Endless Walk}{10}{}%
+\contentsline {chapter}{\numberline {6}Mechanus}{11}{}%
+\contentsline {section}{Features of origin}{11}{}%
+\contentsline {subsection}{Massive Spellcasting}{11}{}%
+\contentsline {subsection}{Cantrips}{11}{}%
+\contentsline {subsection}{Multiple Spelllists}{11}{}%
+\contentsline {chapter}{\numberline {7}Phlegethos}{12}{}%
+\contentsline {section}{Features of origin}{12}{}%
+\contentsline {subsection}{Fireattack}{12}{}%
+\contentsline {subsection}{Fireresistance}{12}{}%
+\contentsline {subsection}{Phlegethos Weapontraining}{12}{}%
+\contentsline {subsection}{Iron Body}{12}{}%
+\contentsline {subsection}{Force of the Fire}{12}{}%
+\contentsline {subsection}{Iron Skin}{12}{}%
+\contentsline {subsection}{Wild Magic}{12}{}%
 \contentsfinish 
