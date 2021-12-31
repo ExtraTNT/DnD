@@ -1,0 +1,528 @@
+\documentclass[a4paper,10pt,twoside,twocolumn, bg=print]{dndbook} %a4, 10pt, book (idk why i did that...), 2 cols, dnd-themed
+\usepackage[english]{babel} %language
+\usepackage[utf8]{inputenc} %lovely utf-8
+\usepackage{graphicx} %images
+\usepackage{wrapfig} %images
+\usepackage{array} %allways use this shit, idk why
+\usepackage{tikz} %draw stuff
+\usepackage{ifthen} %draw stuff
+\usetikzlibrary{shapes,calc,fadings} %draw stuff
+\usepackage{xspace} %usefull idk, allways import this stuff
+\usepackage{dirtytalk} %\say because fuck it
+\usepackage{setspace} %don't ask, kind of like it...
+\usepackage{pgfplots}
+
+\usepackage[singlelinecheck=false]{caption} %idk dndbook...
+\usepackage{listings} %idk dndbook...
+\usepackage{shortvrb} %not used yet...
+\usepackage{stfloats} %idk dndbook
+
+\singlespacing
+\makeatletter %because of titlepage and \HUGE
+
+\@openrightfalse %no empty pages
+
+\graphicspath{ {./images/} }
+
+\def \license {GNU Free Documentation License}
+\def \licensetext {Please consider and respect the copyleft of this license. The content of this document should be accessible to everyone. Everyone has the right to use the content of this document as he/she wishes, to modify it, to publish it modified (taking into account the copyleft) and to republish it without any changes (taking into account the copyleft).}
+\def \author {Sven Hugi}%if you edit this document, add your name... <3
+\def \illustrators {} %add name
+\def \othercontrib {} %add name
+
+%highlighting with some random effect -> looks handmade and i love it...
+\newcommand\hl[2][yellow]{
+	\begin{tikzpicture}[
+	baseline,
+	decoration={random steps,amplitude=1pt,segment length=15pt},
+	outer sep=-15pt, inner sep = 0pt
+	]
+	\node[decorate,rectangle,fill=#1,anchor=text]{#2\xspace};
+	\end{tikzpicture}
+}
+%2 column layout hack...
+\newcommand{\nextPage}{
+	\newpage
+	\hbox{}
+	\newpage
+}
+%make bad things look ok...
+\newcommand{\doublelinebreak}{
+	\linebreak\linebreak
+}
+%the old HUGE fontsize
+\newcommand\HUGE{\@setfontsize\Huge{60}{80}} 
+
+\renewcommand{\maketitle}{
+	\thispagestyle{empty}
+	\onecolumn %fuck it
+	\vspace*{5cm}
+	\begin{center}
+		$\vspace*{2cm}$
+			{\HUGE\DndFontDropCap{MAGE ARCHER}}\\	
+	\end{center}
+	\twocolumn %reset shit
+}\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%											Begin with the fucking document														%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\maketitle
+	\section*{Credits}
+	\vspace{.25cm}
+	\textbf{Author:} \author\linebreak
+	%\textbf{Illustrators:} \illustrators\linebreak
+	%\textbf{Additional Contributors:} \othercontrib\linebreak
+	\textbf{License:} \license\doublelinebreak
+	\licensetext\doublelinebreak
+
+	\vfill\pagebreak\hbox{}\vfill\hfill{\tiny This Document was written in \LaTeX.}
+	\chapter{Mage Archer}
+	\DndDropCapLine{A}{}Mage Archer is a archer who relies heavily on magic. They are mostly trained to protect locations and act mostly out of sight.
+
+	\begin{DndTable}[header=The Mage Archer]{ccX}
+		\textbf{Level}	&\textbf{Proficiency Bonus}	&\textbf{Features}\\
+		$1st$			&+$2$						&Mage Archery, Magical Archetype\\
+		$2nd$			&+$2$						&Archery\\
+		$3rd$			&+$2$						&\\
+		$4th$			&+$2$						&Ability Score Improvement\\
+		$5th$			&+$3$						&\\
+		$6th$			&+$3$						&Archetype Feature\\
+		$7th$			&+$3$						&\\
+		$8th$			&+$3$						&Ability Score Improvement\\
+		$9th$			&+$4$						&\\
+		$10th$			&+$4$						& Extra Attack\\
+		$11th$			&+$4$						&\\
+		$12th$			&+$4$						&Ability Score Improvement\\
+		$13th$			&+$5$						&\\
+		$14th$			&+$5$						&Archetype Feature\\
+		$15th$			&+$5$						&\\
+		$16th$			&+$5$						&Ability Score Improvement\\
+		$17th$			&+$6$						&\\
+		$18th$			&+$6$						&Spell Mastery\\
+		$19th$			&+$6$						&Ability Score Improvement\\
+		$20th$			&+$6$						&Master Archer\\
+	\end{DndTable}
+	\begin{DndTable}[header=Spellslots]{Xcccccccccc}
+		\textbf{Level}	&\textbf{Cantrips}	&\textbf{$1$}	&\textbf{$2$}	&\textbf{$3$}	&\textbf{$4$}	&\textbf{$5$}	&\textbf{$6$}	&\textbf{$7$}	&\textbf{$8$}	&\textbf{$9$}\\
+		$1st$			&$2$				&$2$			&				&				&				&				&				&				&				&\\
+		$2nd$			&$2$				&$2$			&				&				&				&				&				&				&				&\\
+		$3rd$			&$2$				&$2$			&$1$			&				&				&				&				&				&				&\\
+		$4th$			&$2$				&$2$			&$1$			&				&				&				&				&				&				&\\
+		$5th$			&$3$				&$3$			&$2$			&$1$			&				&				&				&				&				&\\
+		$6th$			&$3$				&$3$			&$2$			&$1$			&				&				&				&				&				&\\
+		$7th$			&$3$				&$3$			&$2$			&$2$			&$1$			&				&				&				&				&\\
+		$8th$			&$3$				&$3$			&$3$			&$2$			&$1$			&				&				&				&				&\\
+		$9th$			&$3$				&$3$			&$3$			&$2$			&$1$			&$1$			&				&				&				&\\
+		$10th$			&$4$				&$3$			&$3$			&$2$			&$2$			&$1$			&				&				&				&\\
+		$11th$			&$4$				&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&				&				&\\
+		$12th$			&$4$				&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&				&				&\\
+		$13th$			&$4$				&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&				&\\
+		$14th$			&$4$				&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&				&\\
+		$15th$			&$5$				&$3$			&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&\\
+		$16th$			&$5$				&$3$			&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&\\
+		$17th$			&$5$				&$3$			&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&$1$\\
+		$18th$			&$5$				&$3$			&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&$1$\\
+		$19th$			&$5$				&$3$			&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&$1$\\
+		$20th$			&$5$				&$3$			&$3$			&$3$			&$3$			&$2$			&$1$			&$1$			&$1$			&$1$\\
+	\end{DndTable}
+	\vfill
+	\hbox{}
+	\pagebreak
+	\section{Class Features}
+		As a Mage Archer you gain the following class features.
+		\subsubsection{Hit Points}
+			\textbf{Hit Dice:} 1d6 per messenger level\linebreak
+			\textbf{Hit Points at 1st Level:} 6 + your Constitution modifier.\linebreak
+			\textbf{Hit Points at Higher Levels:} 1d6 (or 4) + your Constitution modifier per Mage Archer level after 1st.
+		\subsubsection{Proficiencies}
+			\textbf{Armor:} Light Armor\linebreak
+			\textbf{Weapons:} Simple Weapons, Martial Ranged Weapons\linebreak
+			\textbf{Tools:} None\linebreak
+			\textbf{Saving Throws:} Intelligence, Wisdom\linebreak
+			\textbf{Skills:} Choose two from Arcana, Stealth, Survival, History and Investigation
+		\subsubsection{Equipment}
+			You start with the following equipment, in addition to the equipment granted by your background\linebreak
+		\begin{itemize}
+			\item $\textbf{(a)}$ a shortbow, $\textbf{(b)}$ a longbow, $\textbf{(c)}$ a light crossbow or $\textbf{(d)}$ a hand crossbow
+			\item a equipment pack of your choice
+			\item leather armor and 30 arrows
+			\item a dagger and a arcane focus
+		\end{itemize}
+		\subsection{Mage Archery}
+			You are able to cast spells with a ranged weapon. You can use a ranged weapon as an arcane focus to avoid material costs, unless they have a gold cost or are consumed during the spell. In order to cast a spell, you need to use one of your spellslots. You start with 2 level one spellslots and gain more on higher levels. You regain your used spellslots at the end of a long rest. You can use your weapon to extend the range of a spell up to the range of your weapon (The spellsniper and sharpshooter feat does not add to this bonus). This does not count for spells with the range self. Also keep in mind, that a arrow eventually gives away your position. Spells with a direct attack are casted directly form the weapon, on spells with a area effect, a condition in a area or touch range a arrow is fired and the spell acts like casted at the point, where the arrow hits a target, ground, wall, object or even the air. If you cast a spell with a ranged weapon, over a distance greater, than the normal range of this weapon, it is handled the same, as if you would make a weapon attack over your normal range. Casting a spell this way, you can not exceed the maximum range of your weapon. Intelligence is your spellcastingability for your mage archer spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a mage archer spell you cast and when making an attack roll with one.\linebreak
+			\textbf{Spell save D}C = 8 + your proficiency bonus + your Intelligence modifier\linebreak
+			\textbf{Spell attack modifier} = your proficiency bonus + your Intelligence modifier\linebreak
+		\subsection{Casting Spells}
+			You can know a number of mage archer spells from your spelllist equal to your Intelligence modifier + your mage archer level (minimum of one spell). The spells must be of a level for which you have spell slots. Every time you gain a new Level, you can change the spells you know.
+		\subsection{Ritual Casting}
+			You can cast a mage archer spell as ritual if that spell has the ritual tag.
+		\subsection{Cantrips}
+			Starting at 1st level, you know two cantrips of your choice from the mage archer spell list. You learn additional mage archer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Mage Archer table.
+		\subsection{Archery}
+			Starting at 2nd level you gain a +2 bonus to attack rolls you make with ranged weapons. This bonus does not apply if you use your weapon to cast a spell or Cantrip.
+		\subsection{Extra Attack}
+			Starting at 10th level you can attack twice, instead of once on your turn. But keep in mind, that you can not cast 2 Spells or Cantrips in one round.
+		\subsection{Spell Mastery}
+			Starting at 18th level you can choose two level 1 mage archer spells, which you can cast on 1st level, without spending a spellslot.
+		\subsection{Master Archer}
+			Starting at 20th level your ranged attacks ignore half cover and three-quarters cover. In addition to that, if you attack a creature which does not have cover, you gain a bonus of 1d4 to the damage roll.
+		\subsection{Magical Archetype}
+			At level one you choose your magical archetype. You archetype grants you also some features on the 1st, 6th and 14th level. The archetypes provided in this document are:
+			\begin{itemize}
+				\item Eldritch Archer
+				\item Shadow Archer
+				\item Celestial Archer
+				\item Wood Archer
+			\end{itemize}
+			But you can homebrew anything you want. It surely is a pleasure for you, the DM and other players to add your own touch to this class.
+	\section{Eldritch Archer}
+		Educated in dark magic, the eldritch archer is a master of the forbidden knowledge. He uses his power to get a overhand over his enemies in battle.
+		\subsection{Eldritch Arrow}
+			Starting at 1st level you learn to use your weapons efficient. Whenever you make an attack with a ranged weapon, you can create an magic arrow out of nothing. This arrow changes the damage type from your ranged weapon for this attack to force damage.
+		\subsection{Eldritch Invocation}
+			Starting at 6th level you can choose a Eldritch Invocation, which you learn. You can choose an additional Invocation on level 14. Whenever you gain a new level you can switch one of your Invocation with a new one. You may choose invocations, which requires pact of the blade or pact of the chain. Choose one of your ranged weapons, which is treated as a pact weapon, in terms of bonuses from invocations.
+	\section{Shadow Archer}
+		Educated in shadow magic, the shadow archer is a master of shadow magic and can hide very well.
+		\subsection{Shadow Walker}
+			Starting at 1st level you can see up to 120ft in darkness, magical and normal.
+		\subsection{Shadow Master}
+			Starting at 6th level you learn to concentrate well in darkness. While standing in complete darkness, you have advantage on constitution saving throws that you make to maintain your concentration on a spell.
+		\subsection{Illusion of Darkness}
+			Starting at 14th level you learn to hide in darkness. If you stand for more than 2 turns in darkness you can become invisible as a bonus action, without spending a spellslot. If you get attacked or the dm think it's necessary, make a Constitution saving throws in order to keep your concentration on your invisibility. While concentrating on your invisibility obtained this way, you can concentrate on a spell. You get visible if you leave the darkness, you attack a creature, you cast a spell or if the light changes. For the duration of your invisibility you are not able to take a bonus action.
+	\section{Celestial Archer}
+		Educated in healing and blessed by the gods, the celestial archer is a supporter from the distance.
+		\subsection{Celestial Healing}
+			Starting at 1st level you can up to your proficiency bonus times per long rest heal a creature for 1d6 plus your spellcasting modifier hp. This takes an action. The rage handled equal to casting a spell with a ranged weapon. On level 14 in this class you can use a d8 instead of the d6.
+		\subsection{Celestial Shield}
+			Starting at 6th level you learn to protect others. You can once per short rest as a reaction shoot an arrow up to 100ft in a direction. The arrow hits the ground and creates an magical area. Every creature in this area gets temporary hit points equal to your proficiency bonus times a d10. After you use this feature, you must make a long rest, in order to use it again.
+	\section{Wood Archer}
+		Young rangers, trained in higher magic, wood archer are the master of nature and magic.
+		\subsection{Familiar}
+			Starting at 1st level, you can cast the Find Familiar spell once every long rest, without spending a spellslot or material components. As a special form you can choose you familiar to be a pixie, but with out sertan spells. Thise spells are confusion, dispell magic, fly, polymorph and sleep.
+		\subsection{Natural Explorer}
+			Starting at 6th level, you can produce an aura of 30ft in diameter. Every creature you choose within this aura doesn't get slowed down because of difficult terrain. Also, the creature can't be tracked by nonmagical means, unless she chooses to leave a trail.
+		\subsection{Cunning Action}
+			Starting at 14th level, you can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
+	\chapter{Spelllist}
+		\section{Cantrips}
+			\begin{itemize}
+				\item Acid Splash
+				\item Blade Ward
+				\item Chill Touch
+				\item Control Flames
+				\item Create Bonfire
+				\item Dancing Lights
+				\item Encode Thoughts
+				\item Fire Bolt
+				\item Friends
+				\item Frostbite
+				\item Gust
+				\item Infestation
+				\item Light
+				\item Mage Hand
+				\item Mending
+				\item Message
+				\item Mind Sliver
+				\item Minor Illusion
+				\item Prestidigitation
+				\item Ray of Frost
+				\item Sapping Sting
+				\item Shape Water
+				\item Toll the Dead
+			\end{itemize}
+		\vfill\pagebreak
+		\section{1st Level}
+			\begin{itemize}
+				\item Alarm
+				\item Animal Friendship
+				\item Catapult
+				\item Cause Fear
+				\item Charm Person
+				\item Chromatic Orb
+				\item Color Spray
+				\item Comprehend Languages
+				\item Cure Wounds
+				\item Detect Magic
+				\item Detect Poison and Disease 	
+				\item Disguise Self
+				\item Distort Value
+				\item Earth Tremor
+				\item Feather Fall
+				\item Find Familiar
+				\item Fog Cloud
+				\item Frost Fingers
+				\item Goodberry
+				\item Hail of Thorns
+				\item Hunter's Mark
+				\item Ice Knife
+				\item Identify
+				\item Jump
+				\item Longstrider
+				\item Magic Missile
+				\item Magnify Gravity
+				\item Protection from Evil and Good
+				\item Ray of Sickness
+				\item Shield
+				\item Silent Image
+				\item Sleep
+				\item Snare
+				\item Speak with Animals
+				\item Sudden Awakening
+				\item Tasha's Caustic Brew
+				\item Tenser's Floating Disk
+				\item Unseen Servant
+				\item Wild Cunning
+				\item Witch Bolt
+				\item Zephyr Strike
+			\end{itemize}
+		\vfill\pagebreak
+		\section{2nd Level}
+			\begin{itemize}
+				\item Aid
+				\item Aganazzar's Scorcher
+				\item Animal Messenger
+				\item Arcane Lock
+				\item Barkskin
+				\item Beast Sense
+				\item Blindness/Deafness
+				\item Cloud of Daggers
+				\item Cordon of Arrows
+				\item Darkness
+				\item Darkvision
+				\item Earthbind
+				\item Enhance Ability
+				\item Enlarge/Reduce
+				\item Find Traps
+				\item Flaming Sphere
+				\item Flock of Familiars
+				\item Fortune's Favor
+				\item Gentle Repose
+				\item Gift of Gab
+				\item Gust of Wind
+				\item Healing Spirit
+				\item Hold Person
+				\item Immovable Object
+				\item Invisibility
+				\item Knock
+				\item Lesser Restoration
+				\item Levitate
+				\item Locate Animals or Plants
+				\item Locate Object
+				\item Magic Weapon
+				\item Melf's Acid Arrow
+				\item Mental Barrier
+				\item Mind Spike
+				\item Mind Thrust
+				\item Mirror Image
+				\item Misty Step
+				\item Nathair's Mischief
+				\item Nystul's Magic Aura
+				\item Pass Without Trace
+				\item Phantasmal Force
+				\item Pyrotechnics
+				\item Ray of Enfeeblement
+				\item Rope Trick
+				\item Scorching Ray
+				\item See Invisibility
+				\item Silence
+				\item Skywrite
+				\item Snilloc's Snowball Storm
+				\item Spider Climb
+				\item Spike Growth
+				\item Suggestion
+				\item Warding Wind
+				\item Web
+				\item Wristpocket
+			\end{itemize}
+		\vfill\pagebreak
+		\section{3rd Level}
+			\begin{itemize}
+				\item Animate Dead
+				\item Bestow Curse
+				\item Blink
+				\item Catnap
+				\item Clairvoyance
+				\item Conjure Barrage
+				\item Counterspell
+				\item Daylight
+				\item Dispel Magic
+				\item Elemental Weapon
+				\item Enemies Abound
+				\item Fast Friends
+				\item Fireball
+				\item Flame Arrows
+				\item Fly
+				\item Galder's Tower
+				\item Gaseous Form
+				\item Haste
+				\item Intellect Fortress
+				\item Leomund's Tiny Hut
+				\item Life Transference
+				\item Lightning Arrow
+				\item Lightning Bolt
+				\item Major Image
+				\item Melf's Minute Meteors
+				\item Nondetection
+				\item Phantom Steed
+				\item Plant Growth
+				\item Protection from Energy
+				\item Pulse Wave
+				\item Remove Curse
+				\item Revivify
+				\item Sending
+				\item Sleet Storm
+				\item Slow
+				\item Speak with Plants
+				\item Thunder Step
+				\item Tidal Wave
+				\item Tiny Servant
+				\item Tongues
+				\item Water Breathing
+				\item Water Walk
+				\item Wind Wall
+			\end{itemize}
+		\vfill\pagebreak
+		\section{4th Level}
+			\begin{itemize}
+				\item Arcane Eye
+				\item Banishment
+				\item Blight
+				\item Confusion
+				\item Control Water
+				\item Dimension Door
+				\item Divination
+				\item Ego Whip
+				\item Elemental Bane
+				\item Fabricate
+				\item Freedom of Movement
+				\item Grasping Vine
+				\item Gravity Sinkhole
+				\item Greater Invisibility
+				\item Ice Storm
+				\item Leomund's Secret Chest
+				\item Locate Creature
+				\item Mordenkainen's Faithful Hound
+				\item Mordenkainen's Private Sanctum
+				\item Otiluke's Resilient Sphere
+				\item Phantasmal Killer
+				\item Polymorph
+				\item Sickening Radiance
+				\item Stone Shape
+				\item Vitriolic Sphere
+			\end{itemize}
+		\section{5th Level}
+			\begin{itemize}
+				\item Animate Objects
+				\item Cloudkill
+				\item Commune with Nature
+				\item Conjure Volley
+				\item Contact Other Plane
+				\item Control Winds
+				\item Creation
+				\item Danse Macabre
+				\item Dawn
+				\item Dominate Person
+				\item Dream
+				\item Enervation
+				\item Far Step
+				\item Geas
+				\item Greater Restoration
+				\item Hold Monster
+				\item Immolation
+				\item Legend Lore
+				\item Mislead
+				\item Modify Memory
+				\item Negative Energy Flood
+				\item Passwall
+				\item Planar Binding
+				\item Rary's Telepathic Bond
+				\item Scrying
+				\item Seeming
+				\item Skill Empowerment
+				\item Swift Quiver
+				\item Telekinesis
+				\item Teleportation Circle
+				\item Temporal Shunt
+				\item Transmute Rock
+				\item Tree Stride
+			\end{itemize}
+		\section{6th Level}
+			\begin{itemize}
+				\item Arcane Gate
+				\item Chain Lightning
+				\item Circle of Death
+				\item Contingency
+				\item Create Homunculus
+				\item Disintegrate
+				\item Drawmij's Instant Summons
+				\item Eyebite
+				\item Globe of Invulnerability
+				\item Gravity Fissure
+				\item Guards and Wards
+				\item Magic Jar
+				\item Mass Suggestion
+				\item Mental Prison
+				\item Otiluke's Freezing Sphere
+				\item Otto's Irresistible Dance
+				\item Programmed Illusion
+				\item Psychic Crush
+				\item Scatter
+				\item Soul Cage
+				\item True Seeing
+				\item Widogast's Transmogrification
+			\end{itemize}
+		\section{7th Level}
+			\begin{itemize}
+				\item Create Magen
+				\item Crown Of Stars
+				\item Delayed Blast Fireball
+				\item Dream of the Blue Veil
+				\item Etherealness
+				\item Finger of Death
+				\item Mirage Arcane
+				\item Mordenkainen's Magnificent Mansion
+				\item Plane Shift
+				\item Power Word: Pain
+				\item Prismatic Spray
+				\item Project Image
+				\item Reverse Gravity
+				\item Sequester
+				\item Symbol
+				\item Teleport
+				\item Whirlwind
+			\end{itemize}
+		\section{8th Level}
+			\begin{itemize}
+				\item Antimagic Field
+				\item Antipathy/Sympathy
+				\item Clone
+				\item Control Weather
+				\item Dark Star
+				\item Demiplane
+				\item Feeblemind
+				\item Illusory Dragon
+				\item Incendiary Cloud
+				\item Maddening Darkness
+				\item Mighty Fortress
+				\item Mind Blank
+				\item Power Word: Stun
+				\item Reality Break
+				\item Sunburst
+				\item Telepathy
+			\end{itemize}
+		\section{9th Level}
+			\begin{itemize}
+				\item Astral Projection
+				\item Foresight
+				\item Gate
+				\item Imprisonment
+				\item Invulnerability
+				\item Meteor Swarm
+				\item Prismatic Wall
+				\item Psychic Scream
+				\item Ravenous Void
+				\item Shapechange
+				\item Weird
+			\end{itemize}
+\end{document}
