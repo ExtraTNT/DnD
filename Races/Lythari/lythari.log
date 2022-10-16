@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**MageArcher.tex
-(./MageArcher.tex
+**lythari.tex
+(./lythari.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/home/hugisv/texmf/tex/latex/dnd/dndbook.cls
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -1050,17 +1050,6 @@ File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
-Package: dirtytalk 2010/11/21 A package making "quoting" easier
-
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-))
-\c@dirtytalk@qdepth=\count334
-)
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
@@ -1074,8 +1063,8 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \t@pgfplots@tokb=\toks48
 \t@pgfplots@tokc=\toks49
 \pgfplots@tmpa=\dimen299
-\c@pgfplots@coordindex=\count335
-\c@pgfplots@scanlineindex=\count336
+\c@pgfplots@coordindex=\count334
+\c@pgfplots@scanlineindex=\count335
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1092,13 +1081,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count337
+\c@pgfplotsarray@tmp=\count336
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count338
+\c@pgfplotstable@counta=\count337
 \t@pgfplotstable@a=\toks50
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1111,7 +1100,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count339
+\c@pgfplotslibrarysurf@no=\count338
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -1143,7 +1132,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen302
 \pgfdecoratedinputsegmentremainingdistance=\dimen303
 \pgf@decorate@distancetomove=\dimen304
-\pgf@decorate@repeatstate=\count340
+\pgf@decorate@repeatstate=\count339
 \pgfdecorationsegmentamplitude=\dimen305
 \pgfdecorationsegmentlength=\dimen306
 )
@@ -1157,7 +1146,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count341
+\pgfplots@numplots=\count340
 \pgfplots@xmin@reg=\dimen307
 \pgfplots@xmax@reg=\dimen308
 \pgfplots@ymin@reg=\dimen309
@@ -1187,28 +1176,28 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen319
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count342
-\c@continuedfloat=\count343
+\c@caption@flags=\count341
+\c@continuedfloat=\count342
 Package caption Info: wrapfig package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count344
+\lst@mode=\count343
 \lst@gtempboxa=\box144
 \lst@token=\toks51
-\lst@length=\count345
+\lst@length=\count344
 \lst@currlwidth=\dimen320
-\lst@column=\count346
-\lst@pos=\count347
+\lst@column=\count345
+\lst@pos=\count346
 \lst@lostspace=\dimen321
 \lst@width=\dimen322
-\lst@newlines=\count348
-\lst@lineno=\count349
+\lst@newlines=\count347
+\lst@lineno=\count348
 \lst@maxwidth=\dimen323
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count350
-\lst@skipnumbers=\count351
+\c@lstnumber=\count349
+\lst@skipnumbers=\count350
 \lst@framebox=\box145
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1222,31 +1211,42 @@ Package: shortvrb 2019/12/16 v2.1l Standard LaTeX documentation package (FMi)
 (/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count352
-\c@dblbotnumber=\count353
+\@dblbotnum=\count351
+\c@dblbotnumber=\count352
+)
+(/usr/share/texlive/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
+Package: dirtytalk 2010/11/21 A package making "quoting" easier
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+))
+\c@dirtytalk@qdepth=\count353
 )
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/italian.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/japanese.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/ngerman.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/russian.sty)
 (/home/hugisv/texmf/tex/latex/dnd/lib/languages/spanish.sty)
-(/home/hugisv/texmf/tex/latex/dnd/lib/languages/french.sty) (./MageArcher.aux)
-\openout1 = `MageArcher.aux'.
+(/home/hugisv/texmf/tex/latex/dnd/lib/languages/french.sty) (./lythari.aux)
+\openout1 = `lythari.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1272,15 +1272,15 @@ e
 ))
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 69.
-Package gensymb Info: Math companion symbols declared on input line 69.
-LaTeX Info: Redefining \degree on input line 69.
-LaTeX Info: Redefining \celsius on input line 69.
+(Font)                  TS1/pbk/m/n --> TS1/pbk/b/n on input line 57.
+Package gensymb Info: Math companion symbols declared on input line 57.
+LaTeX Info: Redefining \degree on input line 57.
+LaTeX Info: Redefining \celsius on input line 57.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 69.
-LaTeX Info: Redefining \ohm on input line 69.
-Package gensymb Info: Using \textohm for \ohm on input line 69.
-Package gensymb Info: Using \textmu for \micro on input line 69.
+erthousand on input line 57.
+LaTeX Info: Redefining \ohm on input line 57.
+Package gensymb Info: Using \textohm for \ohm on input line 57.
+Package gensymb Info: Using \textmu for \micro on input line 57.
 
 ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
@@ -1317,14 +1317,14 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 69.
+LaTeX Info: Redefining \microtypecontext on input line 57.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 69.
+LaTeX Info: Redefining \showhyphens on input line 57.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1333,7 +1333,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 69.
+LaTeX Info: Redefining \selectfont on input line 57.
 \c@mv@tabular=\count360
 \c@mv@boldtabular=\count361
 
@@ -1341,7 +1341,7 @@ LaTeX Info: Redefining \selectfont on input line 69.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 69.
+ on input line 57.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
@@ -1352,174 +1352,99 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 70.
+(Font)              <7> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 70.
-LaTeX Font Info:    Trying to load font information for TS1+pbk on input line 7
-0.
+(Font)              <5> on input line 58.
+LaTeX Font Info:    Trying to load font information for TS1+pbk on input line 5
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pbk.fd
 File: ts1pbk.fd 2001/06/04 font definitions for TS1/pbk.
 )
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <10> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 70.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 58.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pbk' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <7> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 70.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <5> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 70.
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 58.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <60> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 70.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 58.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <20.74> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 71.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <20.74> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 71.
+(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <10> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 73.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <8> not available
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <8> not available
+(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 69.
+
+Overfull \hbox (20.01419pt too wide) in paragraph at lines 69--70
+\T1/pbk/l/n/10 (-20) https://static.wikia.nocookie.net/forgottenrealms/images/9
+/95/Lythari_mcav4_54.png/revision/latest 
+ []
+
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <5> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 79.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <7> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 80.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 73.
 <img/footerscroll.pdf, id=34, 596.2275pt x 42.15584pt>
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 80.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 73.
 (pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
- [2
+[2
+
 
  </home/hugisv/texmf/tex/latex/dnd/img/footerscroll.pdf>]
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <24.88> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 80.
-LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <24.88> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 80.
-contour: Using 32 copies for `Chapter\ 1:' on input line 80.
-contour: Using 32 copies for `Mage' on input line 80.
-contour: Using 32 copies for `Archer' on input line 80.
-LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <10> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 81.
-Package lettrine.sty Info: Targeted height = 41.41992pt
-(lettrine.sty)             (no accent, loversize=0),
-(lettrine.sty)             Lettrine height = 40.90071pt (A);
-(lettrine.sty)             reported on input line 81.
-LaTeX Font Info:    Trying to load font information for T1+jkpss on input line 
-83.
-(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
-File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `jkpss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/jkpss/b/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/jkpss/b/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for T1+GilliusADFNoTwo-LF o
-n input line 83.
+<./images/lythari1.png, id=42, 576.1525pt x 869.2475pt>
+File: ./images/lythari1.png Graphic file (type png)
+<use ./images/lythari1.png>
+Package pdftex.def Info: ./images/lythari1.png  used on input line 76.
+(pdftex.def)             Requested size: 232.62682pt x 350.96895pt.
+<./images/lythari2.png, id=44, 137.7948pt x 190.311pt>
+File: ./images/lythari2.png Graphic file (type png)
+<use ./images/lythari2.png>
+Package pdftex.def Info: ./images/lythari2.png  used on input line 92.
+(pdftex.def)             Requested size: 232.62682pt x 321.31451pt.
 
-(/usr/share/texlive/texmf-dist/tex/latex/gillius/T1GilliusADFNoTwo-LF.fd
-File: T1GilliusADFNoTwo-LF.fd 2013/11/03 (autoinst) Font definitions for T1/Gil
-liusADFNoTwo-LF.
-)
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 83.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `GilliusADFNoTwo-LF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 83.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <12> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 134.
-LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <12> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 134.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <8> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 147.
-LaTeX Font Info:    Font shape `TS1/pbk/m/n' in size <8> not available
-(Font)              Font shape `TS1/pbk/l/n' tried instead on input line 147.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14.4> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 152.
-LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <14.4> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 152.
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 92--93
+[][]  
+ []
+
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 156.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 93.
 (pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
-
 [3
 
-]
-File: img/footerscroll.pdf Graphic file (type pdf)
-<use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 193.
-(pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
- [4]
-File: img/footerscroll.pdf Graphic file (type pdf)
-<use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 207.
-(pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
- [5
-
-]
-Chapter 2.
-contour: Using 32 copies for `Chapter\ 2:' on input line 207.
-contour: Using 32 copies for `Spelllist' on input line 207.
-File: img/footerscroll.pdf Graphic file (type pdf)
-<use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 280.
-(pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
-[6
-
-]
-File: img/footerscroll.pdf Graphic file (type pdf)
-<use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 386.
-(pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
- [7]
-File: img/footerscroll.pdf Graphic file (type pdf)
-<use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 517.
-(pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
- [8]
-File: img/footerscroll.pdf Graphic file (type pdf)
-<use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 528.
-(pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
- [9
-
-] (./MageArcher.aux) ) 
+ <./images/lythari1.png> <./images/lythari2.png>] (./lythari.aux) ) 
 Here is how much of TeX's memory you used:
- 38473 strings out of 481239
- 914542 string characters out of 5920377
- 1434971 words of memory out of 5000000
- 52903 multiletter control sequences out of 15000+600000
- 595584 words of font info for 110 fonts, out of 8000000 for 9000
+ 38233 strings out of 481239
+ 910608 string characters out of 5920377
+ 1383112 words of memory out of 5000000
+ 52709 multiletter control sequences out of 15000+600000
+ 547443 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,98p,1591b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/gillius/gl
-s_4bsedw.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/s
-hare/texlive/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo2-Regular.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/initials/RoyalIn.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/kpfonts/jkpssbn8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/bookman/ubkd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bo
-okman/ubkl8a.pfb>
-Output written on MageArcher.pdf (9 pages, 123371 bytes).
+ 70i,17n,98p,902b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/
+texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/f
+onts/type1/public/initials/RoyalIn.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/bookman/ubkd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookma
+n/ubkl8a.pfb>
+Output written on lythari.pdf (3 pages, 2145972 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 24178 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 11388 words of extra memory for PDF output out of 12000 (max. 10000000)
 
