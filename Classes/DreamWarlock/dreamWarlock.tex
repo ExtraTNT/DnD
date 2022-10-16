@@ -1,0 +1,181 @@
+\documentclass[a4paper,10pt,twoside,twocolumn]{dndbook} %a4, 10pt, book (idk why i did that...), 2 cols, dnd-themed
+\usepackage[english]{babel} %language
+\usepackage[utf8]{inputenc} %lovely utf-8
+\usepackage{graphicx} %images
+\usepackage{wrapfig} %images
+\usepackage{array} %allways use this shit, idk why
+\usepackage{tikz} %draw stuff
+\usepackage{ifthen} %draw stuff
+\usetikzlibrary{shapes,calc,fadings} %draw stuff
+\usepackage{xspace} %usefull idk, allways import this stuff
+\usepackage{dirtytalk} %\say because fuck it
+\usepackage{setspace} %don't ask, kind of like it...
+\usepackage{pgfplots}
+
+\usepackage[singlelinecheck=false]{caption} %idk dndbook...
+\usepackage{listings} %idk dndbook...
+\usepackage{shortvrb} %not used yet...
+\usepackage{stfloats} %idk dndbook
+\usepackage{dirtytalk}
+
+\singlespacing
+\makeatletter %because of titlepage and \HUGE
+
+\@openrightfalse %no empty pages
+
+\graphicspath{ {./images/} }
+
+\def \license {GNU Free Documentation License}
+\def \licensetext {Please consider and respect the copyleft of this license. The content of this document should be accessible to everyone. Everyone has the right to use the content of this document as he/she wishes, to modify it, to publish it modified (taking into account the copyleft) and to republish it without any changes (taking into account the copyleft).}
+\def \author {Sven Hugi}%if you edit this document, add your name... <3
+\def \illustrators {} %add name
+\def \othercontrib {} %add name
+
+%highlighting with some random effect -> looks handmade and i love it...
+\newcommand\hl[2][yellow]{
+	\begin{tikzpicture}[
+	baseline,
+	decoration={random steps,amplitude=1pt,segment length=15pt},
+	outer sep=-15pt, inner sep = 0pt
+	]
+	\node[decorate,rectangle,fill=#1,anchor=text]{#2\xspace};
+	\end{tikzpicture}
+}
+%2 column layout hack...
+\newcommand{\nextPage}{
+	\newpage
+	\hbox{}
+	\newpage
+}
+%make bad things look ok...
+\newcommand{\doublelinebreak}{
+	\linebreak\linebreak
+}
+%the old HUGE fontsize
+\newcommand\HUGE{\@setfontsize\Huge{60}{80}} 
+
+\renewcommand{\maketitle}{
+	\thispagestyle{empty}
+	\onecolumn %fuck it
+	\vspace*{5cm}
+	\begin{center}
+		$\vspace*{2cm}$
+			{\HUGE\DndFontDropCap{DREAM WARLOCK}}\\	
+	\end{center}
+	\twocolumn %reset shit
+}\makeatother
+
+\begin{document}
+	\maketitle
+	\section*{Credits}
+	\vspace{.25cm}
+	\textbf{Authors:} \author\linebreak
+	\textbf{Illustrators:} \illustrators\linebreak
+	\textbf{Additional Contributors:} \othercontrib\linebreak
+	\textbf{License:} \license\doublelinebreak
+	\licensetext\doublelinebreak
+	\vfill\pagebreak\hbox{}\vfill\hfill{\tiny This Document was written in \LaTeX.}
+	\newpage
+	\chapter{Dream Warlock}
+	\section{Extended Spell List}
+	\begin{DndTable}[header=Spell List]{lX}
+		\textbf{Spell Level}	& \textbf{Spells}\\
+		$Cantrip$				& Protect from Nightmares, Dream Beam\\
+		$1st$					& Alarm, Silent Image\\
+		$2nd$					& Phantasmal Force, Blur\\
+		$3rd$					& Phantom Steed, Haste\\
+		$4th$					& Phantasmal Killer, Polymorph\\
+		$5th$					& Dreamshade, Creation\\
+	\end{DndTable}
+	\section{Features}
+	\subsection{Dream Seight}
+	% TODO fix grammer...
+	Starting at level 1, you can choose any number of creatures in a 30ft radius of you or which you are familiar with. Those creatures can, while being on the same plane of existence and holding concentration, then see what you can see, instead of what they would normally see. A creature can drop and regain concentration as a bonus action. You can always reject a creature from using this ability, even if they haven't dropped concentration, since you allowed it last time. Spells that alter your vision also alters the vision from everyone using this ability. If you have darvkision of some sort, everyone using this ability also benefits from it, but blindsight, tremorsense etc. have no effect and if you don't have darkvision, a creature, which normally has, does not benefit from it.
+	\subsection{Bonus Cantrips}
+	% TODO fix grammer
+	Starting at level 1 you gain access to the cantrips shown in the Extended Spell List. Those cantrips do not count against the number of cantrips known, shown in the warlock table.
+	\subsection{Influence Dreams}
+	Starting at level 1 you are able to influence the dreams of others. To do so, you can as an action force a sleeping creature in a 30ft to succeed on an wisdom saving throw or be charmed by you for 8h or until concentration is dropped.
+	The creature has a +5 bonus on this roll, if you are not familiar with this creature and a -5 bonus, if you are familiar with the fears or hopes of the creature. If you want to charm a awake creature, the creature has advantage on the saving throw.
+	While charmed, you can influence the dreams of the creature to your imagination and see what the creature dreams. This way, you can deal up to 1d4 psychic damage per turn, but not reduce the creatures hitpoints below half of the max hitpoints of this creature.
+	\subsection{Dream World}
+	Starting at level 6 you are able to hold creatures in your dream world, an exact copy of your surrounding. While you are holding creatures in your dream world, you are unconscious, but stable, as long, as you concentrate on the dream world. Willing Creatures, you are familiar with can enter and leave the dream world, as an action, while in a 300ft radius around you. You can choose unwilling creatures up to a radius of 300ft, those creature must seceded on an wisdowm saving throw or get send to your dream world. A creature which is unwillingly in your dream world can only leave, if you drop concentration or if there is no creature left, which is willingly in the dream world. A creature, which is killed in the dream world gets send back and falls unconscious, but is stable at 0 hitpoints. In your dream world, you get an action and 3 reactions. You can learn 7 of the following actions, which you can use: % todo is 3 reactions to much?
+	\begin{itemize}
+		\item Action: Minor Illusion
+		\item Action: Prestidigitation
+		\item Action: Druidcraft
+		\item Action: Rise or lower ground by 5ft
+		\item Action: Make or destroy difficult terrain (30ft x 30ft)
+		\item Action: Create or destroy water (5ft x 5ft x 5ft)
+		\item Action: Change daytime
+		\item Action: Change light
+		\item Action: Light
+		\item Action: Mist (You cover an area with magical mist, smoke or steam. The area becomes nearly impossible to see through, only allowing creatures with trueseight use there vision effectively)
+		\item Action: Change gravity (Change the gravity in an area or the entire dream world, allowing creatures to float in the air or halving jump distances, speeds and double fall damage)
+		\item Action: Change Sound (Change how loud sounds are, so that as an example a screaming is only as loud, as a falling leave or that whispering is as loud as thunder)
+		\item Action: Emerge (You appear at a location you choose and become a normal member of the dream world, loosing your dream world actions and reactions, but regain your normal actions. You can drop out of emerge with a bonus action. Your Deep Sleep ability does not work inside the dream world and your physical body is still on the plane you where when creating the dream world)
+		\item Reaction: Prestidigitation
+		\item Reaction: Druidcraft
+		\item Reaction: Dancing lights
+	\end{itemize}
+	\subsection{Deep Sleep}
+	Starting at level 10, when you fall unconscious, you gain temporary hit points, equal to your warlock level. An attack against you can not break your concentration, as long, as you have at least 1 of those temporary hit points. If you regain consciousness, the remaining temporary hitpoints vanish and you can no longer profit from the effects granted by them. You can use this feature up to your charisma modifier per short rest.
+	\subsection{World of Nightmare}
+	Starting at level 14 you have mastered to manipulate your dream world. You are now able to directly affect creatures in it. You gain 4 action from the list below:
+	\begin{itemize}
+		\item Action: Phantasmal Force
+		\item Action: Beacon of healing (10ft radius, 2 rounds, 1d4 + charisma modifier healing per round for every creature inside of the area, lasting 5 rounds)
+		\item Action: Curse a creature until your next turn. Every attack against this creature deals 1d6 extra necrotic damage.
+		\item Action: Create or destroy a pool with acid (15ft, 1d4 acid damage per round for every creature inside)
+		\item Action: Flash (Blinds every creature in a 30ft radius, which can see the point, you are aiming at for the next round)
+		\item Action: Give advantage on a death saving throw
+		\item Reaction: Give +1 to attack and damage
+		\item Reaction: Give +2 bonus to ac or resistance against magic missile for one attack
+	\end{itemize}
+\chapter{Eldritch Invocations}
+	\subsection{Eldritch Dream}
+	Requires: Level 10, Dream Patreon
+	\begin{itemize}
+		\item You gain two additional actions and/or reactions from the list of available actions and reactions to choose from the Dream World feature. 
+		\item Creatures get disadvantage on saves to resist getting trapped in your dream world, when you are in a 60ft radius of set creature.
+	\end{itemize}
+	\subsection{Polydream}
+	Requires: Level 15, Dream Patreon\\
+	You can cast Polymorph as an action on one Creature in your Dream World. As long, as the creature is the morphed form, you can not take another action, only reactions. You can always drop polymorph, It gets also dropped, if the creature gets out of your Dream World.
+	\subsection{Suffering Dream}
+	Requires: Level 14, Dream Patreon\\
+	You gain four additional actions and/or reactions from the list of available actions and reactions to choose from the World of Nightmare or Dream World feature.
+	\subsection{Raven}
+	Requires: Level 14, Dream Patreon\\
+	You can use your Action to summon a creature you know inside of the dream world. This creature can be dead or alive outside of the dreamworld. The creature appears as you imagine it for example you imagine the town guard William wearing a fancy dress. The creature then simultaneously exists in the dream world and outside of it.
+	\chapter{Apendix}
+	\section{Spells}
+	\DndSpellHeader%
+	{Dream Beam}
+	{Illusion cantrip}
+	{1 action}
+	{90 feet}
+	{V, S}
+	{1 Round}
+	You create a small illusion in the mind of a creature, attacking it. The Creature must succeed a intelligence saving throw or take 1d8 psychic damage and react appropriately to the attack. This can not be used to flank creatures. The illusion disappears at the start of your next turn. The illusion can have every form imaginable, but must fit in a 1ft x 1ft x 1ft cube.\linebreak\linebreak
+	On level 5 the creature takes 3d4 psychic damage, on level 10 4d4, on level 15 5d4 and the illusion can be 5ft x 5ft x 5ft cube and on level 20 you can hold concentration to use the attack again as a bonus action the following turn, linking together no more than 2 turns.
+	
+	\DndSpellHeader%
+	{Protect from Nightmares}
+	{Illusion Ritual cantrip}
+	{1 minute R}
+	{Touch}
+	{V, S, M (feather)}
+	{Concentration up to 12h}
+	You touch a creature giving them a illusionary guard in there mind. The creature can add for the duration a bonus of 1d8 on saving throws made against the effect of dreams. Also the creature can not suffer from nightmares by non-magical means.\linebreak\linebreak
+	This cantrip can be upcasted to resist against spells from the same level, giving total protection on 9th level.
+	
+	\DndSpellHeader%
+	{Dreamshade}
+	{Illusion 5th Level}
+	{1 action}
+	{30 feet}
+	{V, S}
+	{Concentration up to 5 min}
+	You create an illusionary shadow of one or more creatures or objects in range. Those Shadows will attack one target you choose per turn, dealing 2d10 psychic damage. A creature can determine the creatures as illusion with a successful investigation check against your spell save dc.
+\end{document}
