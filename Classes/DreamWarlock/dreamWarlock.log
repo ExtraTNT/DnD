@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.10.4)  16 OCT 2022 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.10.4)  17 OCT 2022 07:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1480,91 +1480,91 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 123.
+Package pdftex.def Info: img/paper.jpg  used on input line 124.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 123.
+Package pdftex.def Info: img/paper.jpg  used on input line 124.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 123.
+Package pdftex.def Info: img/paper.jpg  used on input line 124.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 123.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 124.
 (pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
  [3
 
 ]
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 135.
+Package pdftex.def Info: img/paper.jpg  used on input line 136.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 135.
+Package pdftex.def Info: img/paper.jpg  used on input line 136.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 135.
+Package pdftex.def Info: img/paper.jpg  used on input line 136.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 135.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 136.
 (pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
 
 [4
 
 ]
 Chapter 2.
-contour: Using 32 copies for `Chapter\ 2:' on input line 135.
-contour: Using 32 copies for `Eldritch' on input line 135.
-contour: Using 32 copies for `Invocations' on input line 135.
+contour: Using 32 copies for `Chapter\ 2:' on input line 136.
+contour: Using 32 copies for `Eldritch' on input line 136.
+contour: Using 32 copies for `Invocations' on input line 136.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 151.
+Package pdftex.def Info: img/paper.jpg  used on input line 152.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 151.
+Package pdftex.def Info: img/paper.jpg  used on input line 152.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 151.
+Package pdftex.def Info: img/paper.jpg  used on input line 152.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 151.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 152.
 (pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
 [5
 
 
 ]
 Chapter 3.
-contour: Using 32 copies for `Chapter\ 3:' on input line 151.
-contour: Using 32 copies for `Apendix' on input line 151.
+contour: Using 32 copies for `Chapter\ 3:' on input line 152.
+contour: Using 32 copies for `Apendix' on input line 152.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <12> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 159.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `T1/pbk/m/sc' in size <12> not available
-(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 159.
+(Font)              Font shape `T1/pbk/l/sc' tried instead on input line 160.
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 159.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 160.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 181.
+Package pdftex.def Info: img/paper.jpg  used on input line 182.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 181.
+Package pdftex.def Info: img/paper.jpg  used on input line 182.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/paper.jpg Graphic file (type jpg)
 <use img/paper.jpg>
-Package pdftex.def Info: img/paper.jpg  used on input line 181.
+Package pdftex.def Info: img/paper.jpg  used on input line 182.
 (pdftex.def)             Requested size: 597.54326pt x 845.07813pt.
 File: img/footerscroll.pdf Graphic file (type pdf)
 <use img/footerscroll.pdf>
-Package pdftex.def Info: img/footerscroll.pdf  used on input line 181.
+Package pdftex.def Info: img/footerscroll.pdf  used on input line 182.
 (pdftex.def)             Requested size: 597.5452pt x 43.36565pt.
 [6
 
@@ -1573,7 +1573,7 @@ Package pdftex.def Info: img/footerscroll.pdf  used on input line 181.
 Here is how much of TeX's memory you used:
  41192 strings out of 478023
  991093 string characters out of 5841208
- 1501501 words of memory out of 5000000
+ 1501500 words of memory out of 5000000
  58627 multiletter control sequences out of 15000+600000
  533608 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1589,7 +1589,7 @@ ve/texmf-dist/fonts/type1/public/kpfonts/jkpssbsc8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/bookman/ubkl8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bo
 okman/ubkli8a.pfb>
-Output written on dreamWarlock.pdf (6 pages, 1763056 bytes).
+Output written on dreamWarlock.pdf (6 pages, 1763041 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
