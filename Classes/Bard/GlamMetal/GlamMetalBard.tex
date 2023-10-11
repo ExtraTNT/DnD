@@ -1,0 +1,115 @@
+\documentclass[a4paper,10pt,twoside,twocolumn, bg=full]{dndbook} %a4, 10pt, book (idk why i did that...), 2 cols, dnd-themed
+\usepackage[english]{babel} %language
+\usepackage[utf8]{inputenc} %lovely utf-8
+\usepackage{graphicx} %images
+\usepackage{wrapfig} %images
+\usepackage{array} %allways use this shit, idk why
+\usepackage{tikz} %draw stuff
+\usepackage{ifthen} %draw stuff
+\usetikzlibrary{shapes,calc,fadings} %draw stuff
+\usepackage{xspace} %usefull idk, allways import this stuff
+\usepackage{dirtytalk} %\say because fuck it
+\usepackage{setspace} %don't ask, kind of like it...
+\usepackage{pgfplots}
+
+\usepackage[singlelinecheck=false]{caption} %idk dndbook...
+\usepackage{listings} %idk dndbook...
+\usepackage{shortvrb} %not used yet...
+\usepackage{stfloats} %idk dndbook
+
+\singlespacing
+\makeatletter %because of titlepage and \HUGE
+
+\@openrightfalse %no empty pages
+
+\graphicspath{{./images/}}
+
+\def \license {GNU Free Documentation License}
+\def \licensetext {Please consider and respect the copyleft of this license. The content of this document should be accessible to everyone. Everyone has the right to use the content of this document as he/she wishes, to modify it, to publish it modified (taking into account the copyleft) and to republish it without any changes (taking into account the copyleft).}
+\def \author {Sven Hugi}%if you edit this document, add your name... <3
+\def \illustrators {} %add name
+\def \othercontrib {} %add name
+
+%highlighting with some random effect -> looks handmade and i love it...
+\newcommand\hl[2][yellow]{
+	\begin{tikzpicture}[
+	baseline,
+	decoration={random steps,amplitude=1pt,segment length=15pt},
+	outer sep=-15pt, inner sep = 0pt
+	]
+	\node[decorate,rectangle,fill=#1,anchor=text]{#2\xspace};
+	\end{tikzpicture}
+}
+%2 column layout hack...
+\newcommand{\nextPage}{%
+	\newpage
+	\hbox{}
+	\newpage
+}
+%make bad things look ok...
+\newcommand{\doublelinebreak}{%
+	\linebreak\linebreak
+}
+%the old HUGE fontsize
+\newcommand\HUGE{\@setfontsize\Huge{60}{80}} 
+
+\renewcommand{\maketitle}{%
+	\thispagestyle{empty}
+	\onecolumn %fuck it
+	\vspace*{5cm}
+	\begin{center}
+		$\vspace*{2cm}$
+			{\HUGE\DndFontDropCap{COLLEGE OF METAL}}\\	
+	\end{center}
+	\twocolumn %reset shit
+}\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%											Begin with the document																%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\maketitle
+	\section*{Credits}
+	\vspace{.25cm}
+	\textbf{Author:} \author\linebreak
+	%\textbf{Illustrators:} \illustrators\linebreak
+	%\textbf{Additional Contributors:} \othercontrib\linebreak
+	\textbf{License:} \license\doublelinebreak
+	\licensetext\doublelinebreak
+
+	\vfill\pagebreak\hbox{}\vfill\hfill{\tiny This Document was written in \LaTeX.}
+	\pagebreak
+	\section{Class Features}
+		\begin{DndTable}[header=College of Metal]{cX}
+			\textbf{Level}	&\textbf{Features}\\
+			$1st$			&\\
+			$2nd$			&\\
+			$3rd$			& Heavy, Brotherhood Defense\\ % there
+			$4th$			&\\
+			$5th$			&\\
+			$6th$			& Full in\\ % there
+			$7th$			&\\
+			$8th$			&\\
+			$9th$			&\\
+			$10th$			&\\
+			$11th$			&\\
+			$12th$			&\\
+			$13th$			&\\
+			$14th$			& Wall of Death, Extra Attack\\ % there
+			$15th$			&\\
+			$16th$			&\\
+			$17th$			&\\
+			$18th$			&\\
+			$19th$			&\\
+			$20th$			&\\
+		\end{DndTable}
+	\section{Heavy}
+		When you join the college of metal, you gain a hit dice of a d12 for this and every following level you take in the bard class. You gain also proficiency with the Battleaxe, Greataxe and Longsword.
+	\section{Brotherhood Defense}
+		Starting also at level 3, whenever a large or smaller creature within 5ft of you gets attacked, you can use your reaction to switch position with it, taking the damage, they would have taken or using your stats to contest a grapple. Furthermore you can use your strength instead of dexterity modifier, when calculating armor class.
+	\section{Full in}
+		Starting at level 6, you can as a bonus action spend a bardic inspiration dice at the start of the battle, to boost you fighting power. When do so, you gain resistance against all non-magical damage for up to two minutes.
+	\section{Wall of Death}
+		Starting at level 14, when facing a Large or smaller creature, you can use your bonus action to push the creature up to halve your movement remaining in the turn.
+	\section{Extra Attack}
+		Starting at 14th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+\end{document}
